@@ -1,0 +1,228 @@
+@import '../../../../scss/main';
+
+.storiesHerobannerMain {
+    position: relative;
+
+    .stoiesHerobannerImg {
+        img {
+            width: 100%;
+            height: 153vb;
+            object-fit: cover;
+        }
+    }
+
+    .storiesBannerText {
+        max-width: 640px;
+        padding: 100px;
+        position: absolute;
+        top: 31%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        .storiesBannerHead {
+            h1 {
+                @include h1;
+                color: var(--color-white);
+            }
+        }
+
+        .storiesBannerPara {
+            p {
+                @include p;
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+.storiesSec {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+
+    a {
+        margin-right: 10px;
+        text-transform: uppercase;
+        @include arial;
+        @include font12;
+        @include font600;
+        letter-spacing: 1px;
+        color: var(--dark-black-color);
+    }
+
+    .stories {
+        opacity: 0.7;
+    }
+}
+
+.islandAdventureMain {
+    background-color: var(--dark-gray-color);
+    padding: 90px 120px;
+
+    .islandCardMain {
+        @include flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .islandLeft {
+            width: 32%;
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top: 1px solid var(--dark-black-color);
+            border-bottom: 1px solid var(--dark-black-color);
+
+            .islandDisc {
+                padding: 30px;
+                text-align: center;
+
+                .islandCardHead {
+                    h2 {
+                        @include h2;
+                        text-decoration: underline;
+                        line-height: 35px;
+                    }
+                }
+
+                .islandCardPara {
+                    p {
+                        @include p;
+                    }
+
+                    .para {
+                        padding-top: 20px;
+                    }
+                }
+
+                .islandBtn {
+                    button {
+                        margin-top: 10px;
+                        @include btnHoverWhite;
+                    }
+
+                    :hover {
+                        @include headerBtn;
+                    }
+                }
+            }
+        }
+
+        .islandRight {
+            width: 70%;
+            @include flex;
+            text-align: center;
+            align-items: center;
+
+            img {
+                width: 870px;
+                height: 580px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .storiesHerobannerMain {
+        .stoiesHerobannerImg {
+            height: 615px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .storiesBannerText {
+            position: relative;
+            padding: 50px;
+            min-width: 100%;
+            text-align: start;
+
+            .storiesBannerHead {
+                h1 {
+                    min-width: 100%;
+                    color: var(--dark-black-color);
+                }
+            }
+
+            .storiesBannerPara {
+                p {
+                    color: var(--dark-black-color);
+                }
+            }
+
+        }
+    }
+
+    .storiesSec {
+        display: none;
+    }
+
+    .islandAdventureMain {
+        padding: 90px 60px;
+
+        .islandCardMain {
+            position: relative;
+            top: 0;
+            gap: 30px;
+
+            .islandLeft {
+                width: 50%;
+                min-height: 100%;
+            }
+
+            .islandRight {
+                width: 50%;
+                margin: 0;
+                height: 525px;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .storiesHerobannerMain {
+        .stoiesHerobannerImg {
+            height: 315px;
+        }
+
+        .storiesBannerText {
+            padding: 25px;
+            text-align: center;
+        }
+    }
+
+    .islandAdventureMain {
+        padding: 0;
+
+        .islandCardMain {
+            padding: 30px 20px;
+            flex-direction: column-reverse;
+
+            .islandLeft {
+                width: 100%;
+                border: none;
+
+                .islandDisc {
+                    padding: 0 30px;
+                }
+            }
+
+            .islandRight {
+                width: 100%;
+                height: auto;
+
+                img {
+
+                    height: 260px;
+                }
+            }
+        }
+    }
+}

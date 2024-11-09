@@ -1,0 +1,169 @@
+@import '../../../../scss/main';
+
+.landMain {
+    margin: 70px 0;
+    text-align: center;
+
+    .landHead {
+        padding-top: 20px;
+
+        h2 {
+            @include h2;
+        }
+    }
+
+    .landSlider {
+        .slider-container2 {
+            display: none;
+        }
+
+        .land {
+            position: relative;
+
+            .landImg {
+                height: 533px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, .5);
+                    content: "";
+                    opacity: 0;
+                    transition: opacity 0.5s ease;
+                }
+            }
+
+            .landText {
+                position: absolute;
+                bottom: 0;
+                text-align: start;
+                padding: 0 30px 30px;
+                display: none;
+                opacity: 0;
+
+                .landPara {
+                    p {
+                        @include p;
+                        color: var(--color-white);
+                    }
+                }
+
+                .landLink {
+                    a {
+                        @include anchorArial;
+                        color: var(--color-white);
+                    }
+                }
+            }
+
+            &:hover .landText {
+                display: block;
+                opacity: 1;
+            }
+
+            &:hover .landImg::before {
+                opacity: 1;
+                display: block;
+            }
+        }
+
+        .landBottom {
+            padding: 15px 20px 0;
+            text-align: start;
+
+            .landPara {
+                p {
+                    @include p;
+                }
+            }
+
+            .landLink {
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .landMain {
+        margin-left: 25%;
+
+        .landHead {
+            padding: 0 0 20px;
+            text-align: start;
+        }
+
+        .landSlider {
+            .slider-container {
+                display: none;
+            }
+
+            .slider-container2 {
+                display: block;
+                overflow: hidden;
+
+                .land {
+                    .landImg::before {
+                        display: none;
+                    }
+
+                    .landText {
+                        .landPara {
+                            p {
+                                color: var(--dark-black-color);
+                            }
+
+                            .landLink {
+                                a {
+                                    color: var(--dark-black-color);
+                                }
+                            }
+
+                        }
+                    }
+
+                    &:hover .landText {
+                        display: none;
+                    }
+                }
+
+                .landBottom {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .landMain {
+        margin: 0;
+        padding: 0;
+        margin-left: 10%;
+        text-align: start;
+
+        .landSlider {
+            .landBPara {
+                height: auto;
+
+                .land {
+                    .landImg {
+                        height: 430px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

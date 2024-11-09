@@ -1,0 +1,214 @@
+@import '../../../../scss/main';
+
+.eventMeetingMain {
+    margin: 100px 0;
+    background-color: var(--card-bg-color);
+    padding: 90px 120px;
+
+    .eventFlex {
+        @include flex;
+        margin: 0 40px;
+        gap: 50px;
+        flex-direction: row;
+        max-height: 530px;
+
+        .eventLeft {
+            height: 530px;
+
+            .eventLocation {
+                width: 790px;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .eventRight {
+            text-align: center;
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top: 1px solid var(--dark-black-color);
+            border-bottom: 1px solid var(--dark-black-color);
+            padding: 20px;
+
+            .eventHead {
+                h2 {
+                    @include h2;
+                    text-decoration: underline;
+                }
+            }
+
+            .eventDetail {
+                p {
+                    @include p;
+                }
+            }
+        }
+    }
+}
+
+.birthdayMain {
+    margin: 100px 0;
+
+    .birthdayFlex {
+        @include flex;
+        margin: 0 40px;
+        gap: 50px;
+        flex-direction: row-reverse;
+        max-height: 530px;
+
+        .birthdayLeft {
+            height: 530px;
+
+            .birthdayLocation {
+                width: 790px;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .birthdayRight {
+            text-align: center;
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top: 1px solid var(--dark-black-color);
+            border-bottom: 1px solid var(--dark-black-color);
+            padding: 20px;
+
+            .birthdayHead {
+                h2 {
+                    @include h2;
+                    text-decoration: underline;
+                }
+            }
+
+            .birthdayDetail {
+                p {
+                    @include p;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .eventMeetingMain {
+        padding: 90px 60px;
+        margin: 0;
+
+        .eventFlex {
+            margin: 0;
+            gap: 20px;
+
+            .eventLeft {
+                width: 50%;
+
+                .eventLocation {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .eventRight {
+                text-align: center;
+                width: 50%;
+
+                .eventHead {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+
+    .birthdayMain {
+        .birthdayFlex {
+            margin: 0;
+            padding: 0 60px;
+            gap: 20px;
+
+            .birthdayLeft {
+                width: 50%;
+
+                .birthdayLocation {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .birthdayRight {
+                text-align: center;
+                width: 50%;
+
+                .birthdayHead {
+                    max-width: 250px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .eventMeetingMain {
+        padding: 20px;
+
+        .eventFlex {
+            flex-direction: column;
+            gap: 0;
+
+            .eventLeft {
+                width: 100%;
+            }
+
+            .eventRight {
+                width: 100%;
+                border: none;
+
+                .eventHead {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .birthdayMain {
+        .birthdayFlex {
+            padding: 0 20px;
+            flex-direction: column;
+            gap: 0;
+
+            .birthdayLeft {
+                width: 100%;
+            }
+
+            .birthdayRight {
+                width: 100%;
+                border: none;
+
+                .birthdayHead {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

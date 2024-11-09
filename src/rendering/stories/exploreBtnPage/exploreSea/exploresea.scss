@@ -1,0 +1,384 @@
+@import '../../../../scss/main';
+
+.exploreBtnSec {
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    margin-top: 70px;
+
+    a {
+        margin-right: 10px;
+        text-transform: uppercase;
+        @include arial;
+        @include font12;
+        @include font600;
+        letter-spacing: 1px;
+        color: var(--dark-black-color);
+    }
+
+    .secrets {
+        opacity: 0.5;
+    }
+}
+
+.exploreBtnDisc {
+    max-width: 720px;
+    margin: 60px auto;
+    text-align: center;
+
+    .exploreBtnHead {
+        h2 {
+            @include h2;
+        }
+
+    }
+
+    .exploreBtnPara {
+        p {
+            @include p;
+        }
+    }
+}
+
+.exploreSeaDetails {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .exploreSea {
+        padding: 40px 0 100px;
+
+        .exploreSeaMain {
+            position: relative;
+            height: 100%;
+            @include flex;
+            justify-content: flex-end;
+
+            .exploreSeaImg {
+                position: absolute;
+                left: 0;
+                top: 50px;
+                width: 750px;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .exploreSeaDisc {
+                width: 720px;
+                height: 500px;
+                background-color: var(--card-bg-color);
+                @include flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .exploreSeaText {
+                    max-width: 450px;
+                    padding: 60px 30px 60px 60px;
+
+                    .exploreSeaHead {
+                        h2 {
+                            @include h2;
+                        }
+                    }
+
+                    .exploreSeaPara {
+                        p {
+                            @include p;
+
+
+                            color: var(--dark-black-color)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.farryLoadMain {
+    position: relative;
+    margin: 80px 0;
+
+    .farryLoadVideo {
+        img {
+            height: 635px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .playIcon {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.artPosterMain {
+    position: relative;
+    margin: 0 0 50px;
+
+    .artPosterImg {
+        img {
+            width: 100%;
+            height: 620px;
+            object-fit: cover;
+        }
+    }
+
+    .artPosterText {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 620px;
+        padding: 80px 90px;
+
+        h4 {
+            @include h4;
+            @include font24;
+            color: var(--color-white);
+        }
+
+        p {
+            @include p;
+            color: var(--color-white);
+        }
+
+    }
+}
+
+.teamDisctionMain {
+    display: grid;
+    grid-template-columns: 840px 1fr;
+    gap: 30px;
+
+    .teamDisctuionLeft {
+        position: relative;
+
+        .disctionImg {
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+
+        .playIcon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .teamDisctionRight {
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .exploreBtnSec {
+        display: none;
+    }
+
+    .exploreBtnDisc {
+        margin: 0 150px;
+        padding: 0;
+    }
+
+    .exploreSeaDetails {
+        .exploreSea {
+            padding: 80px 30px 0;
+
+            .exploreSeaMain {
+
+                .exploreSeaDisc {
+                    max-width: 425px;
+                    height: 100%;
+
+                    .exploreSeaText {
+                        max-width: 265px;
+                        padding: 30px 15px 30px 30px;
+                    }
+                }
+
+                .exploreSeaImg {
+                    max-width: 440px;
+                    left: 0%;
+                    top: 10%;
+                    max-height: 390px;
+
+                }
+            }
+        }
+    }
+
+    .farryLoadMain {
+        .farryLoadVideo {
+            img {
+                height: 515px;
+            }
+        }
+    }
+
+    .artPosterMain {
+        padding: 60px 60px 0;
+
+        .artPosterImg {
+            width: 100%;
+            height: 315px;
+            object-fit: cover;
+
+            img {
+                height: 100%;
+            }
+
+        }
+
+        .artPosterText {
+            padding: 30px;
+            max-width: 320px;
+            left: 10%;
+        }
+    }
+
+    .teamDisctionMain {
+        grid-template-columns: 515px 1fr;
+        gap: 20px;
+        padding: 0 15px;
+
+        .teamDisctuionLeft {
+            .disctionImg {
+                img {
+                    height: 310px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .exploreBtnDisc {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .exploreSeaDetails {
+        .exploreSea {
+            padding: 0px;
+
+            .exploreSeaMain {
+                flex-direction: column;
+
+                .exploreSeaImg {
+                    position: relative;
+                    max-width: 100%;
+
+                    img {
+                        min-width: 100%;
+                        height: 235px;
+                        padding: 0 15px;
+                    }
+                }
+
+                .exploreSeaDisc {
+                    width: auto;
+                    height: auto;
+
+                    .exploreSeaText {
+                        min-width: 100%;
+                        padding: 30px 40px;
+
+                        .exploreSeaHead {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .farryLoadMain {
+        margin: 20px 0 0;
+
+        .farryLoadVideo {
+            img {
+                height: 260px;
+            }
+        }
+
+        .playIcon {
+            left: 6%;
+            bottom: 8%;
+            transform: none;
+
+            img {
+                height: 20px;
+            }
+        }
+    }
+
+    .artPosterMain {
+        width: 100%;
+        padding: 20px;
+        margin: 200px 0 0;
+
+        .artPosterImg {
+            height: 235px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .artPosterText {
+            position: relative;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            padding: 20px 0 0;
+
+            h4 {
+                color: var(--light-dark-para-color);
+            }
+
+            p {
+                color: var(--light-dark-para-color);
+            }
+
+            button {
+                @include btnHoverWhite;
+            }
+        }
+    }
+
+    .teamDisctionMain {
+        grid-template-columns: 1fr;
+
+        .teamDisctuionLeft {
+            .disctionImg {
+                img {
+                    height: 240px;
+                }
+            }
+        }
+
+        .teamDisctionRight {
+            img {
+                height: 480px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,136 @@
+@mixin anchor {
+    @include times;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--dark-black-color);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+@mixin anchorArial {
+    @include arial;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--dark-black-color);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+@mixin h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+
+    @media (max-width:576px) {
+        font-size: 24px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+}
+
+@mixin h2 {
+    @include font24;
+    color: var(--dark-black-color);
+    margin-bottom: 18px;
+    @include times;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    @include font500;
+
+    @media (max-width:576px) {
+        font-size: 21px;
+        letter-spacing: 2px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+}
+
+@mixin h4 {
+    font-size: 18px;
+    color: var(--dark-black-color);
+    margin-bottom: 10px;
+    @include times;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    @include font500;
+}
+
+@mixin p {
+    @include font15;
+    color: var(--light-dark-para-color);
+    margin-bottom: 15px;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    @include arial;
+
+    @media (max-width:576px) {
+        letter-spacing: 1px;
+    }
+}
+
+@mixin label {
+    @include font11;
+    color: var(--light-dark-para-color);
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    @include font600;
+    @include arial;
+    text-transform: uppercase;
+
+    @media (max-width:576px) {
+        line-height: 10px;
+    }
+}
+
+@mixin font11 {
+    font-size: 11px;
+}
+
+@mixin font12 {
+    font-size: 12px;
+}
+
+@mixin font14 {
+    font-size: 14px;
+}
+
+@mixin font15 {
+    font-size: 15px;
+}
+
+@mixin font18 {
+    font-size: 18px;
+}
+
+@mixin font21 {
+    font-size: 21px;
+}
+
+@mixin font24 {
+    font-size: 24px;
+}
+
+@mixin arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@mixin times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@mixin font500 {
+    font-weight: 500;
+}
+
+@mixin font600 {
+    font-weight: 600;
+}
+
+@mixin font700 {
+    font-weight: 700;
+}

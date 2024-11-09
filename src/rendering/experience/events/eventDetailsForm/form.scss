@@ -1,0 +1,578 @@
+@import '../../../../scss/main';
+
+.eventDetailsFormMain {
+    max-width: 840px;
+    margin: 0 auto;
+
+    .eventDetailsFormHeadMain {
+        text-align: center;
+
+        .eventFormHead {
+            h2 {
+                @include h2;
+            }
+        }
+
+        .eventFormDetails {
+            p {
+                @include p;
+
+                a {
+                    color: var(--dark-black-color);
+                }
+            }
+
+            em {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+        }
+    }
+
+    .eventForm {
+        .eventFormInput {
+            border-bottom: 1px solid var(--bottom-border-color);
+            padding: 30px 0;
+            @include flex;
+            justify-content: space-between;
+
+            .eventFormLeft {
+                .eventInputMain {
+                    margin-top: 35px;
+
+                    .eventFormInputLabel {
+                        display: block;
+                        margin-bottom: 10px;
+
+                        label {
+                            @include label;
+                        }
+                    }
+
+                    .formRadioBtn {
+                        label {
+                            @include label;
+                        }
+                    }
+
+                    .eventInput {
+                        width: 360px;
+
+                        input {
+                            width: 100%;
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+
+            .eventFormRight {
+                .eventInputMain {
+                    margin-top: 35px;
+
+                    .eventFormInputLabel {
+                        display: block;
+                        margin-bottom: 10px;
+
+                        label {
+                            @include label;
+                        }
+
+                    }
+
+                    .eventInput {
+                        width: 360px;
+
+                        input {
+                            width: 100%;
+                            padding: 15px;
+                        }
+
+                        select {
+                            width: 100%;
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .eventInformation {
+            padding: 30px 0;
+            border-bottom: 1px solid var(--bottom-border-color);
+
+            .eventInformationHead {
+                h4 {
+                    @include h4;
+                }
+            }
+
+            .eventInformationInput {
+                @include flex;
+                justify-content: space-between;
+
+                .eventInformationLeft {
+                    .eventInputMain {
+                        margin-top: 35px;
+
+                        .eventFormInputLabel {
+                            display: block;
+                            margin-bottom: 10px;
+                            @include label;
+
+                        }
+
+                        .eventInput {
+                            select {
+                                width: 100%;
+                                padding: 15px;
+                            }
+                        }
+
+                        .formRadioBtn {
+                            label {
+                                @include label;
+                            }
+                        }
+
+                        .eventInput {
+                            width: 360px;
+
+                            input {
+                                width: 100%;
+                                padding: 15px;
+                            }
+                        }
+                    }
+
+                    .eventResortListMain {
+                        margin-top: 50px;
+
+                        .eventInterestedHead {
+                            label {
+                                @include label;
+                            }
+                        }
+
+                        .eventResortList {
+                            margin-top: 10px;
+
+                            label {
+                                display: block;
+                                @include label;
+
+                                input {
+                                    height: 18px;
+                                    width: 18px;
+                                    margin: 0px 5px 0 0;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .eventInformationRight {
+                    .eventInputMain {
+                        margin-top: 35px;
+
+                        .eventFormInputLabel {
+                            display: block;
+                            margin-bottom: 10px;
+
+                            label {
+                                @include label;
+                            }
+                        }
+
+                        .formRadioBtn {
+                            label {
+                                @include label;
+                            }
+                        }
+
+                        .eventInput {
+                            width: 360px;
+
+                            input {
+                                width: 100%;
+                                padding: 15px;
+                            }
+                        }
+                    }
+
+                    .eventeatReq {
+                        margin-top: 30px;
+
+                        .eventInterestedHead {
+                            label {
+                                @include label;
+                            }
+                        }
+
+                        .eventeatList {
+                            margin-top: 10px;
+
+                            label {
+                                display: block;
+                                @include label;
+
+                                input {
+                                    height: 18px;
+                                    width: 18px;
+                                    margin: 0px 5px 0 0;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .eventAdditionalInformation {
+            padding: 30px 0;
+            border-bottom: 1px solid var(--bottom-border-color);
+            margin: 30px 0;
+
+            .eventAdditionalInformationHead {
+                h4 {
+                    @include h4;
+                }
+            }
+
+            .eventAdditionalInformationDetail {
+                .eventAdditionalInfoMain {
+                    @include flex;
+                    justify-content: space-between;
+
+                    .eventAdditionalInfoMainLeft {
+                        .eventAdditionalInfoHead {
+                            .eventAdditionalInfoTitle {
+                                max-width: 300px;
+
+                                label {
+                                    @include label;
+                                }
+                            }
+
+                            input {
+                                width: 360px;
+                                padding: 30px 0;
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .eventAdditionalInfoMainRight {
+                        .eventAdditionalInfoHead {
+                            .eventAdditionalInfoTitle {
+                                max-width: 350px;
+
+                                label {
+                                    @include label;
+                                }
+                            }
+
+                            input {
+                                width: 360px;
+                                padding: 30px 0;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .securityMain {
+            margin: 0 0 50px;
+
+            .securityHead {
+                h4 {
+                    @include h4;
+                }
+            }
+
+            .securityPolicy {
+                @include flex;
+                justify-content: space-between;
+                padding: 30px 0 0;
+
+                .securityLeft {
+                    width: 50%;
+
+                    .securityCheckbox {
+                        label {
+                            @include label;
+
+                            input {
+                                height: 18px;
+                                width: 18px;
+                                margin: 0px 5px 0 0;
+                            }
+                        }
+                    }
+
+                    .securityPara {
+                        padding-right: 55px;
+                        padding-top: 20px;
+
+                        p {
+                            color: var(--light-dark-para-color);
+                            line-height: 23px;
+                            @include arial;
+                            @include font15;
+                        }
+                    }
+                }
+            }
+        }
+
+        .formSubmitBtn {
+            max-width: 360px;
+            margin: 0 auto;
+
+            button {
+                width: 100%;
+                @include headerBtn;
+                background-color: var(--form-btn-bg-color);
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .eventDetailsFormMain {
+        .eventDetailsFormHeadMain {
+            max-width: 436px;
+            margin: 0 auto;
+        }
+
+        .eventForm {
+            padding: 30px;
+
+            .eventFormInput {
+                padding: 0;
+
+                .eventFormLeft {
+                    .eventInputMain {
+                        .eventInput {
+                            max-width: 325px;
+                        }
+                    }
+                }
+
+                .eventFormRight {
+                    .eventInputMain {
+                        .eventInput {
+                            max-width: 325px;
+                        }
+                    }
+                }
+            }
+
+            .eventInformation {
+                .eventInformationInput {
+                    .eventInformationLeft {
+                        .eventInputMain {
+                            .eventInput {
+                                input {
+                                    max-width: 325px;
+                                }
+
+                                select {
+                                    max-width: 325px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .eventAdditionalInformation {
+                .eventAdditionalInformationDetail {
+                    .eventAdditionalInfoMain {
+                        padding: 30px 0 0;
+
+                        .eventAdditionalInfoMainLeft {
+                            max-width: 325px;
+                        }
+
+                        .eventAdditionalInfoMainRight {
+                            max-width: 325px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .eventDetailsFormMain {
+        .eventDetailsFormHeadMain {
+            width: auto;
+            padding: 0 20px;
+        }
+
+        .eventForm {
+            padding: 0 20px 30px;
+
+            .eventFormInput {
+                flex-direction: column;
+
+                .eventFormLeft {
+                    .eventInputMain {
+                        margin-top: 30px;
+
+                        .eventInput {
+                            min-width: 100%;
+
+                            input {
+                                padding: 11px;
+                            }
+                        }
+                    }
+                }
+
+                .eventFormRight {
+                    .eventInputMain {
+                        margin-top: 30px;
+
+                        .eventInput {
+                            min-width: 100%;
+
+                            input {
+                                padding: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .eventInformation {
+                padding: 30px 0 0;
+                width: auto;
+
+                .eventInformationHead {
+                    padding: 20px 0 0;
+                }
+
+                .eventInformationInput {
+                    flex-direction: column;
+                    width: auto;
+
+                    .eventInformationLeft {
+                        .eventInputMain {
+                            .eventInput {
+                                width: auto;
+
+                                select {
+                                    padding: 11px;
+                                    min-width: 100%;
+                                }
+
+                                input {
+                                    padding: 11px;
+                                    min-width: 100%;
+                                }
+                            }
+                        }
+
+                        .eventResortListMain {
+                            margin-top: 40px;
+                        }
+                    }
+
+                    .eventInformationRight {
+                        padding-bottom: 30px;
+                        width: auto;
+
+                        .eventInputMain {
+                            margin-top: 15px;
+
+                            .eventInput {
+                                width: auto;
+
+                                input {
+                                    padding: 11px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .eventAdditionalInformation {
+                margin-top: 30px;
+
+                .eventAdditionalInformationDetail {
+                    .eventAdditionalInfoMain {
+                        flex-direction: column;
+
+                        .eventAdditionalInfoMainLeft {
+                            min-width: 100%;
+
+                            .eventAdditionalInfoHead {
+                                .eventAdditionalInfoTitle {
+                                    min-width: 100%;
+                                }
+
+                                input {
+                                    padding: 25px 0;
+                                    margin: 10px 0 30px;
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .eventAdditionalInfoMainRight {
+                            min-width: 100%;
+
+                            .eventAdditionalInfoHead {
+                                .eventAdditionalInfoTitle {
+                                    min-width: 100%;
+                                }
+
+                                input {
+                                    padding: 25px 0;
+                                    margin: 10px 0 0;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .securityMain {
+                .securityHead {
+                    // padding: 0 0 30px;
+                }
+
+                .securityPolicy {
+                    flex-direction: column;
+
+                    .securityLeft {
+                        width: 100%;
+
+                        .securityPara {
+                            padding: 20px 0 0;
+                        }
+                    }
+
+                    .securityLeft {
+                        width: 100%;
+
+                        .securityPara {
+                            padding: 20px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

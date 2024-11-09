@@ -1,0 +1,108 @@
+@import '../../../../scss/main';
+
+.exploreBtnMain {
+    position: relative;
+
+    .exploreBtnHerobannerMain {
+        position: relative;
+
+        .exploreBtnHerobannerImg {
+            img {
+                height: 633px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .exploreBtnHerobannerText {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            max-width: 660px;
+            padding: 95px;
+            object-fit: cover;
+
+            .exploreBtnBannerHead {
+                h1 {
+                    max-width: 460px;
+                    @include h1;
+                    color: var(--color-white);
+                }
+            }
+
+            .exploreBtnBannerPara {
+                p {
+                    @include p;
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    .hotelAvailablity {
+        position: absolute;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .exploreBtnMain {
+        .exploreBtnHerobannerMain {
+            .exploreBtnHerobannerImg {
+                height: 512px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .exploreBtnHerobannerText {
+                position: relative;
+                transform: none;
+                padding: 50px;
+                min-width: 100%;
+
+                .exploreBtnBannerHead {
+                    h1 {
+                        min-width: 100%;
+                        color: var(--dark-black-color);
+                    }
+                }
+
+                .exploreBtnBannerPara {
+                    p {
+                        color: var(--dark-black-color);
+                    }
+                }
+
+            }
+        }
+
+        .hotelAvailablity {
+            position: relative;
+            padding: 0 20px;
+            margin: 0 0px 50px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .exploreBtnMain {
+        .exploreBtnHerobannerMain {
+            .exploreBtnHerobannerImg {
+                height: 260px;
+            }
+
+            .exploreBtnHerobannerText {
+                padding: 25px;
+                text-align: center;
+            }
+        }
+
+        .hotelAvailablity {
+            margin: 0 0 30px;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,160 @@
+@import '../../../scss/main';
+
+.offersTitleMain {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0 0;
+
+    .offersTitle {
+        .offersHead {
+            h2 {
+                @include h2;
+            }
+        }
+
+        .offersPara {
+            p {
+                @include p;
+            }
+        }
+    }
+}
+
+.offersCardMain {
+    padding: 0 15px;
+    margin: 70px 0;
+
+    .slider-container2 {
+        display: none;
+    }
+
+    .slider-container3 {
+        display: none;
+    }
+
+    .slick-slide {
+        padding: 0 10px;
+    }
+
+    .offerCard {
+        margin: 70px 0 0;
+
+        .offerCardImage {
+            height: 393px;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+
+        .offerCardDetails {
+            padding-right: 50px;
+
+            .offerdetails {
+                margin-bottom: 35px;
+
+                h4 {
+                    @include h4;
+                }
+            }
+
+
+            p {
+                @include p;
+            }
+
+            .offlinks {
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .offersTitleMain {
+        max-width: 435px;
+    }
+
+    .offersCardMain {
+        margin-left: 26%;
+        padding: 0;
+        overflow: hidden;
+
+        .slider-container {
+            display: none;
+        }
+
+        .slider-container2 {
+            display: block;
+        }
+
+        .offerCard {
+            padding: 0 0 30px;
+            margin: 40px 0 0;
+
+            .offerCardImage {
+                width: 100%;
+                height: 325px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .offersTitleMain {
+        padding: 20px 20px 0;
+    }
+
+    .offersCardMain {
+        margin-left: 6%;
+
+        .slider-container {
+            display: none;
+        }
+
+        .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
+            display: block;
+        }
+
+        .slick-slide {
+            padding: 0 5px;
+        }
+
+        .offerCard {
+            padding: 0 0 30px;
+
+            .offerCardImage {
+                height: 330px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .offerCardDetails {
+                padding-right: 20px;
+
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+    }
+}

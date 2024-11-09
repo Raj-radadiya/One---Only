@@ -1,0 +1,281 @@
+@import '../../../../scss/main';
+
+.montenegroSec {
+    display: flex;
+    align-items: center;
+    padding: 90px 40px 20px;
+
+    a {
+        margin-right: 10px;
+        text-transform: uppercase;
+        @include arial;
+        @include font12;
+        @include font600;
+        letter-spacing: 1px;
+        color: var(--dark-black-color);
+    }
+
+    .stays {
+        opacity: 0.5;
+    }
+}
+
+.montenegroDisc {
+    max-width: 720px;
+    margin: 60px auto;
+    text-align: center;
+
+    .montenegroHead {
+        h2 {
+            @include h2;
+        }
+
+    }
+
+    .montenegroPara {
+        p {
+            @include p;
+        }
+    }
+
+    .montenegroBtn {
+        margin-top: 20px;
+
+        button {
+            @include btnHoverWhite;
+        }
+
+        :hover {
+            @include headerBtn;
+        }
+    }
+}
+
+.montenegroCardMain {
+    background-color: var(--dark-gray-color);
+
+    .montenegroCard {
+        @include flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 0;
+        flex-direction: row-reverse;
+
+        .montenegroCardLeft {
+            width: 720px;
+            padding: 30px 90px 0 60px;
+
+            .whaleImg {
+                max-width: 570px;
+                height: 100%;
+
+                img {
+                    min-width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .montenegroCardRight {
+            max-width: 360px;
+
+            .restArea {
+                height: 480px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .montenegroCardDisc {
+                padding-top: 20px;
+                margin: 75px 0;
+
+                .montenegroCardHead {
+                    margin-bottom: 30px;
+
+                    strong {
+                        @include arial;
+                        @include font15;
+                    }
+                }
+
+                .montenegroCardPara {
+                    p {
+                        @include p;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.roomMain {
+    margin: 100px 0;
+    @include flex;
+    justify-content: space-around;
+
+    .roomCard {
+        width: 570px;
+
+        .roomImg {
+            height: 380px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .roomText {
+            @include flex;
+            flex-direction: column;
+            padding: 20px 16px 0 20px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+
+            .roomHeading {
+                h4 {
+                    @include h4;
+                }
+            }
+
+            .roomPara {
+                p {
+                    @include p;
+                }
+            }
+
+            .roomLink {
+                a {
+                    @include anchorArial;
+                    padding: 5px 0;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .montenegroSec {
+        display: none;
+    }
+
+    .montenegroDisc {
+        margin: 0 150px;
+        padding: 0;
+    }
+
+    .montenegroCardMain {
+        .montenegroCard {
+            padding: 90px 0;
+            .montenegroCardLeft {
+                max-width: 500px;
+                padding: 30px 30px 0;
+
+                .whaleImg {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .montenegroCardRight {
+                max-width: 230px;
+
+                .restArea {
+                    height: 310px;
+                }
+
+                .montenegroCardDisc {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .roomMain {
+        .roomCard {
+            width: 341px;
+
+            .roomImg {
+                height: 227px;
+                object-fit: cover;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .roomText {
+                padding: 20px 30px 0 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .montenegroDisc {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+
+        .montenegroBtn {
+            margin-bottom: 50px;
+        }
+    }
+
+    .montenegroCardMain {
+        .montenegroCard {
+            margin: 80px 0 0;
+            @include flex;
+            flex-direction: column;
+            padding: 0 15px;
+
+            .montenegroCardLeft {
+                width: auto;
+                padding: 0;
+            }
+
+            .montenegroCardRight {
+                max-width: 100%;
+
+                .restArea {
+                    display: none;
+                }
+
+                .montenegroCardDisc {
+                    padding: 20px 0 0;
+                }
+            }
+        }
+    }
+
+    .roomMain {
+        flex-direction: column;
+
+        .roomCard {
+            width: 100%;
+            padding: 0 15px;
+
+            .roomImg {
+                min-width: 100%;
+                height: 240px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .roomText {
+                padding: 20px 20px 0 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,296 @@
+@import '../../../../scss/main';
+
+.roomSeaCardMain {
+    padding: 90px 120px;
+    background-color: var(--card-bg-color);
+
+    .roomSeaMain {
+        @include flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .roomSeaLeft {
+            width: 70%;
+        }
+
+        .roomSeaRight {
+            width: 30%;
+            @include flex;
+            align-items: center;
+            border-top: 1px solid var(--dark-black-color);
+            border-bottom: 1px solid var(--dark-black-color);
+
+            .roomSeaDisc {
+                padding: 30px;
+                text-align: center;
+
+                .roomSeaCardHead {
+                    h2 {
+                        @include h2;
+                        text-decoration: underline;
+                        line-height: 35px;
+                    }
+                }
+
+                .roomSeaCardPara {
+                    p {
+                        @include p;
+
+                        strong {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .para {
+                        padding-top: 20px;
+                    }
+                }
+
+                .roomSeaBtn {
+                    button {
+                        @include btnHoverWhite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.seatingViewMain {
+    padding: 90px 120px;
+
+    .seatingViewCardMain {
+        @include flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .seatingViewLeft {
+            width: 32%;
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top: 1px solid var(--dark-black-color);
+            border-bottom: 1px solid var(--dark-black-color);
+
+            .seatingViewDisc {
+                padding: 30px;
+                text-align: center;
+
+                .seatingViewCardHead {
+                    h2 {
+                        @include h2;
+                        text-decoration: underline;
+                        line-height: 35px;
+                    }
+                }
+
+                .seatingViewCardPara {
+                    p {
+                        @include p;
+                    }
+
+                    .para {
+                        padding-top: 20px;
+                    }
+                }
+
+                .seatingViewBtn {
+                    button {
+                        @include btnHoverWhite;
+                    }
+                }
+            }
+        }
+
+        .seatingViewRight {
+            position: relative;
+            width: 70%;
+            @include flex;
+            text-align: center;
+            align-items: center;
+
+            .seatingViewImg {
+                img {
+                    width: 870px;
+                    height: 530px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+.island {
+    position: relative;
+
+    .islandFullImg {
+        height: 740px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .islandText {
+        position: absolute;
+        bottom: 0;
+        max-width: 620px;
+        padding: 100px 120px;
+
+        h2 {
+            @include h2;
+            color: var(--color-white);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .roomSeaCardMain {
+        padding: 90px 60px;
+
+        .roomSeaMain {
+            gap: 20px;
+
+            .roomSeaLeft {
+                width: 50%;
+                margin: 0;
+
+                .roomSeaImg {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .roomSeaRight {
+                width: 50%;
+                min-height: 100%;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .seatingViewMain {
+        padding: 90px 60px;
+
+        .seatingViewCardMain {
+            position: relative;
+            top: 0;
+            gap: 30px;
+
+            .seatingViewLeft {
+                width: 50%;
+                min-height: 100%;
+            }
+
+            .seatingViewRight {
+                width: 50%;
+                margin: 0;
+
+                .seatingViewImg {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .island {
+        .islandFullImg {
+            height: 400px;
+        }
+
+        .islandText {
+            padding: 30px 50px;
+            max-width: 340px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .roomSeaCardMain {
+        padding: 0;
+
+        .roomSeaMain {
+            padding: 30px 20px;
+            flex-direction: column;
+
+            .roomSeaLeft {
+                width: 100%;
+                height: auto;
+
+                img {
+                    height: 260px;
+                }
+            }
+
+            .roomSeaRight {
+                width: 100%;
+                border: none;
+
+                .roomSeaDisc {
+                    padding: 0 30px;
+                }
+            }
+
+
+        }
+    }
+
+    .seatingViewMain {
+        padding: 0;
+
+        .seatingViewCardMain {
+            padding: 30px 20px;
+            flex-direction: column-reverse;
+
+            .seatingViewLeft {
+                width: 100%;
+                border: none;
+
+                .seatingViewDisc {
+                    padding: 0 30px;
+                }
+            }
+
+            .seatingViewRight {
+                width: 100%;
+                height: auto;
+
+                img {
+                    height: 260px;
+                }
+            }
+        }
+    }
+
+    .island {
+        margin-top: 100px;
+
+        .islandFullImg {
+            height: 260px;
+        }
+
+        .islandText {
+            position: relative;
+            padding: 20px;
+            min-width: 100%;
+
+            h2 {
+                color: var(--dark-black-color);
+            }
+        }
+    }
+
+}

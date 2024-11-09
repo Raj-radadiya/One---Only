@@ -1,0 +1,217 @@
+@import '../../../../scss/main';
+
+.hostelSpecificationMain {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    display: grid;
+    grid-template-columns: 355px 1fr;
+    box-shadow: var(--box-shadow);
+
+    .specificationLeft {
+        padding-right: 60px;
+        border-right: 2px solid var(--bottom-border-color);
+
+        .specificationHeading {
+            h2 {
+                @include h2;
+            }
+        }
+    }
+
+    .specificationRight {
+        padding-left: 60px;
+
+        .specificationDetails {
+            p {
+                @include p;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.roomBookDetails {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .roomBooking {
+        padding: 100px 0;
+
+        .roomBookingMain {
+            position: relative;
+            height: 100%;
+            @include flex;
+            justify-content: flex-end;
+
+            .roomBookingImg {
+                position: absolute;
+                left: 0;
+                top: 50px;
+                width: 750px;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .roomBookingDisc {
+                width: 720px;
+                height: 500px;
+                background-color: var(--card-bg-color);
+                @include flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .roomBookingText {
+                    max-width: 450px;
+                    padding: 60px 30px 60px 60px;
+
+                    .roomBookingHead {
+                        h2 {
+                            @include h2;
+                        }
+                    }
+
+                    .roomBookingPara {
+                        p {
+                            @include p;
+
+
+                            color: var(--dark-black-color)
+                        }
+                    }
+
+                    .roomBookinkContact {
+                        p {
+                            @include p;
+                            margin: 0;
+
+                            a {
+                                color: var(--dark-black-color);
+                            }
+                        }
+                    }
+
+                    .anotherPara {
+                        margin-top: 30px;
+
+                        p {
+                            @include p;
+                        }
+                    }
+
+                    .RoomBookBtn {
+                        margin-top: 20px;
+
+                        button {
+                            @include btnHoverWhite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .hostelSpecificationMain {
+        grid-template-columns: 200px 1fr;
+
+        .specificationLeft {
+            padding: 0;
+        }
+
+        .specificationRight {
+            padding: 0 0 0 20px;
+        }
+    }
+
+    .roomBookDetails {
+        .roomBooking {
+            padding: 80px 30px 0;
+
+            .roomBookingMain {
+
+                .roomBookingDisc {
+                    max-width: 425px;
+                    height: 100%;
+
+                    .roomBookingText {
+                        max-width: 265px;
+                        padding: 30px 15px 30px 30px;
+                    }
+                }
+
+                .roomBookingImg {
+                    max-width: 440px;
+                    left: 0%;
+                    top: 10%;
+                    max-height: 390px;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .hostelSpecificationMain {
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+        margin: 15px 20px;
+
+        .specificationLeft {
+            border: none;
+            padding-bottom: 20px;
+        }
+
+        .specificationRight {
+            padding: 0;
+        }
+    }
+
+    .roomBookDetails {
+        .roomBooking {
+            padding: 0px;
+
+            .roomBookingMain {
+                flex-direction: column;
+
+                .roomBookingImg {
+                    position: relative;
+                    // left: 0;
+                    // top: 0;
+                    // min-width: 100%;
+                    // padding: 0 30px;
+                    max-width: 100%;
+
+                    img {
+                        min-width: 100%;
+                        height: 335px;
+                    }
+                }
+
+                .roomBookingDisc {
+                    width: auto;
+                    // display: block;
+                    height: auto;
+                    text-align: center;
+
+                    .roomBookingText {
+                        min-width: 100%;
+                        padding:30px 40px;
+
+                        .roomBookingHead {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

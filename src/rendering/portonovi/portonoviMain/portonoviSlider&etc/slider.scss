@@ -1,0 +1,338 @@
+@import '../../../../scss/main';
+
+.portonoviSliderRightArrow {
+    position: absolute;
+    top: 23%;
+    right: -5%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    img {
+        height: auto;
+    }
+}
+
+.portonoviSliderLeftArrow {
+    position: absolute;
+    top: 23%;
+    left: -5%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: auto;
+    }
+}
+
+.portonoviDisc {
+    max-width: 720px;
+    margin: 130px auto 0;
+    text-align: center;
+
+    .portonoviHead {
+        h2 {
+            @include h2;
+        }
+
+    }
+
+    .portonoviPara {
+        p {
+            @include p;
+        }
+    }
+}
+
+.portonoviSlider {
+    margin: 100px 0;
+
+    .slick-slide {
+        padding: 0 10px;
+    }
+
+    .slider-container2 {
+        display: none;
+    }
+
+    .slider-container3 {
+        display: none;
+    }
+
+    .portonoviCard {
+
+        .portonoviImg {
+            height: 380px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .portonoviDetails {
+            text-align: start;
+            padding: 15px 0 0 0;
+
+            .portonoviName {
+                padding-bottom: 20px;
+
+                h4 {
+                    @include h4;
+                }
+            }
+
+            .portonoviExperience {
+                p {
+                    @include p;
+                }
+            }
+
+            .portonoviLink {
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+    }
+}
+
+.islandHomeDetails {
+    max-width: 1200px;
+    margin: 0 auto 70px;
+
+    .islandHome {
+        padding: 50px 0;
+
+        .islandHomeMain {
+            position: relative;
+            height: 100%;
+            @include flex;
+            justify-content: flex-end;
+
+            .islandHomeImg {
+                position: absolute;
+                left: 0;
+                top: 50px;
+                width: 750px;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .islandHomeDisc {
+                width: 720px;
+                height: 500px;
+                background-color: var(--card-bg-color);
+                @include flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .islandHomeText {
+                    max-width: 450px;
+                    padding: 60px 30px 60px 60px;
+
+                    .islandHomeHead {
+                        h2 {
+                            @include h2;
+                        }
+                    }
+
+                    .islandHomePara {
+                        p {
+                            @include p;
+
+
+                            color: var(--dark-black-color)
+                        }
+                    }
+
+                    .homeBookBtn {
+                        button {
+                            @include btnHoverWhite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.islandfullImg {
+    height: 620px;
+    padding: 0 0 50px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:768px) {
+    .portonoviDisc {
+        margin: 150px 150px 0;
+        padding: 0;
+    }
+
+    .portonoviSlider {
+        overflow: hidden;
+
+        .slider-container {
+            display: none;
+        }
+
+        .slider-container2 {
+            display: block;
+        }
+
+        .slider-container3 {
+            display: none;
+        }
+
+        .portonoviCard {
+            width: 100%;
+
+            .portonoviImg {
+                width: 100%;
+                height: 444px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .islandHomeDetails {
+        .islandHome {
+            padding: 50px 30px 0;
+
+            .islandHomeMain {
+
+                .islandHomeDisc {
+                    max-width: 425px;
+                    height: 100%;
+
+                    .islandHomeText {
+                        max-width: 265px;
+                        padding: 30px 15px 30px 30px;
+                    }
+                }
+
+                .islandHomeImg {
+                    max-width: 440px;
+                    left: 0%;
+                    top: 10%;
+                    max-height: 390px;
+
+                }
+            }
+        }
+    }
+
+    .islandfullImg {
+        height: 315px;
+        padding: 0;
+
+        img {
+            padding: 0 60px 30px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .portonoviDisc {
+        width: 100%;
+        margin: 150px 0 0;
+        padding: 0 20px;
+    }
+
+    .portonoviSlider {
+        margin-left: 10%;
+        overflow: hidden;
+
+        .slick-slide {
+            padding: 0 5px;
+        }
+
+        .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
+            display: block;
+        }
+
+        .portonoviCard {
+            .portonoviImg {
+                height: 395px;
+            }
+        }
+    }
+
+    .islandHomeDetails {
+        margin: 0 0 70px;
+        padding: 0 15px;
+
+        .islandHome {
+            padding: 0px;
+
+            .islandHomeMain {
+                flex-direction: column;
+
+                .islandHomeImg {
+                    position: relative;
+                    max-width: 100%;
+
+                    img {
+                        min-width: 100%;
+                        height: 235px;
+                    }
+                }
+
+                .islandHomeDisc {
+                    width: auto;
+                    height: auto;
+
+                    .islandHomeText {
+                        min-width: 100%;
+                        padding: 20px;
+
+                        .islandHomeHead {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .islandfullImg {
+        padding: 40px 20px 50px;
+        height: auto;
+
+        img {
+            height: 235px;
+            padding: 0;
+        }
+    }
+}

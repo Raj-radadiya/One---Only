@@ -1,0 +1,309 @@
+@import '../../../../scss/main';
+
+.seaMain {
+    position: relative;
+
+    .seaAttachnment {
+        background-attachment: scroll;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .seaCard {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 60px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-white);
+        @include flex;
+        justify-content: flex-end;
+
+        .seaCardMain {
+            margin: 100px 50px 0;
+            @include flex;
+            justify-content: space-between;
+
+            .seaLeft {
+                @include flex;
+                border-top: 1px solid var(--dark-black-color);
+                border-bottom: 1px solid var(--dark-black-color);
+                margin-right: 60px;
+                text-align: center;
+                align-items: center;
+                width: 30%;
+
+                .seaDisc {
+
+                    .seaCardHead {
+                        h2 {
+                            @include h2;
+                            text-decoration: underline;
+                            line-height: 35px;
+                        }
+                    }
+
+                    .seaCardPara {
+                        p {
+                            @include p;
+                        }
+                    }
+                }
+            }
+
+            .seaRight {
+                width: 70%;
+
+                .slick-slide {
+                    padding: 0 15px;
+                }
+
+                .seaSlider {
+                    .seaCardImg {
+                        height: 290px;
+                        margin-bottom: 10px;
+
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .seaCardDisc {
+                        padding: 0 0 0 20px;
+
+                        .seaCardHead {
+                            h4 {
+                                @include h4;
+                            }
+                        }
+
+                        .seaCardPara {
+                            p {
+                                @include p;
+                            }
+                        }
+
+                        .seaCardLink {
+                            a {
+                                @include anchorArial;
+                            }
+                        }
+                    }
+                }
+
+                .slider-container2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.adriaticMain {
+    position: relative;
+    margin: 120px 0;
+
+    .adriaticDisc {
+        max-width: 720px;
+        height: 500px;
+        background-color: var(--card-bg-color);
+        @include flex;
+        align-items: center;
+
+        .adriaticText {
+            max-width: 450px;
+            padding: 60px 30px 60px 60px;
+
+            .adriaticHead {
+                h2 {
+                    max-width: 300px;
+                    @include h2;
+                }
+            }
+
+            .adriaticPara {
+                p {
+                    @include p;
+                }
+            }
+
+            .adriaticBtn {
+                button {
+                    @include btnHoverWhite;
+
+                    &:hover {
+                        @include headerBtn;
+                    }
+                }
+            }
+        }
+    }
+
+    .adriaticImg {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 750px;
+        height: 500px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .seaMain {
+        .seaAttachnment {
+            display: none;
+        }
+
+        .seaCard {
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+
+            .seaCardMain {
+                flex-direction: column;
+                margin: 0;
+
+                .seaLeft {
+                    margin: 0;
+                    width: 100%;
+                    padding: 30px 0;
+                }
+
+                .seaRight {
+                    width: 100%;
+
+                    .seaSlider {
+                        .seaCardImg {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .adriaticMain {
+        padding: 40px 30px 20px;
+        margin: 100px 0;
+
+        .adriaticDisc {
+            max-width: 425px;
+
+            .adriaticText {
+                max-width: 265px;
+                padding: 30px 15px 30px 30px;
+
+                .adriaticHead {
+                    max-width: 180px;
+                }
+            }
+        }
+
+        .adriaticImg {
+            max-width: 440px;
+            left: 39%;
+            top: 15%;
+            max-height: 390px;
+
+        }
+    }
+
+    .slick-list {
+        margin: 0;
+    }
+
+    .slick-slide {
+        padding: 0;
+    }
+}
+
+@media (max-width:576px) {
+    .seaMain {
+        max-width: 576px;
+
+        .seaCard {
+            width: 100%;
+
+            .seaCardMain {
+                .seaLeft {
+                    max-width: 576px;
+                    margin: 0 auto;
+
+                    .seaDisc {
+                        padding: 0 20px;
+
+                        .seaCardHead {
+                            max-width: 300px;
+                        }
+                    }
+                }
+
+                .seaRight {
+                    max-width: 576px;
+                    overflow: hidden;
+
+                    .slider-container {
+                        display: none;
+                    }
+
+                    .slider-container2 {
+                        display: block;
+                    }
+
+                    .seaSlider {
+                        width: 100%;
+
+                        .seaCardImg {
+                            width: 100%;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .adriaticMain {
+        margin: 70px 0 0;
+        padding: 0;
+
+        .adriaticDisc {
+            min-width: 100%;
+            display: block;
+            height: auto;
+
+            .adriaticText {
+                min-width: 100%;
+                padding: 50px 30px;
+            }
+        }
+
+        .adriaticImg {
+            position: relative;
+            left: 0;
+            min-width: 100%;
+            padding: 0 30px;
+
+            img {
+                min-width: 100%;
+                height: 335px;
+            }
+        }
+    }
+
+}

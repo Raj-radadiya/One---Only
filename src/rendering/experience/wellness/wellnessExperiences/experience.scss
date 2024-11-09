@@ -1,0 +1,362 @@
+@import '../../../../scss/main';
+
+.wellnessExperiencesMain {
+    .wellnessExperiencesSec {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+
+        a {
+            margin-right: 10px;
+            text-transform: uppercase;
+            @include arial;
+            @include font12;
+            @include font600;
+            letter-spacing: 1px;
+            color: var(--dark-black-color);
+        }
+
+        .wellness {
+            opacity: 0.5;
+        }
+    }
+
+    .wellnessExperiencesDisc {
+        max-width: 720px;
+        margin: 60px auto;
+        text-align: center;
+
+        .wellnessExperiencesHead {
+            h2 {
+                @include h2;
+            }
+
+        }
+
+        .wellnessExperiencesPara {
+            p {
+                @include p;
+            }
+        }
+    }
+}
+
+.wellnessCardMain {
+    position: relative;
+    margin: 0 0 50px;
+
+    .wellnessCardImg {
+        height: 550px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .wellnessCardText {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 620px;
+        padding: 80px 90px;
+
+        h4 {
+            @include h4;
+            @include font24;
+            color: var(--color-white);
+        }
+
+        p {
+            @include p;
+            color: var(--color-white);
+
+        }
+
+        button {
+            @include backTransparent;
+            color: var(--color-white);
+        }
+
+        button:hover {
+            @include btnHoverWhite;
+            border: 1px solid transparent;
+        }
+
+    }
+}
+
+.wellnessSliderMain {
+    margin: 40px 0 60px;
+
+    .slick-slide {
+        padding: 0 10px;
+    }
+
+    .slider-container2 {
+        display: none;
+    }
+
+    .slider-container3 {
+        display: none;
+    }
+
+    .wellnessSlider {
+        .wellnessSliderImage {
+            height: 312px;
+            margin-bottom: 20px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .wellnessCardDetails {
+            padding: 0 20px;
+            text-align: start;
+
+            .wellnesstitleCardhead {
+                h4 {
+                    @include h4;
+                }
+            }
+
+
+            p {
+                @include p;
+            }
+
+            a {
+                @include anchorArial;
+            }
+        }
+    }
+
+    .slider-container2 {
+        display: none;
+    }
+}
+
+.islandMain {
+    position: relative;
+    margin: 0 0 50px;
+
+    .islandImg {
+        height: 550px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .islandText {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 620px;
+        padding: 80px 90px;
+
+        h4 {
+            @include h4;
+            @include font24;
+            color: var(--color-white);
+        }
+
+        p {
+            @include p;
+            color: var(--color-white);
+
+        }
+
+        button {
+            @include backTransparent;
+            color: var(--color-white);
+        }
+
+        button:hover {
+            @include btnHoverWhite;
+            border: 1px solid transparent;
+        }
+
+    }
+}
+
+
+@media (max-width:768px) {
+    .wellnessExperiencesMain {
+        padding: 0;
+
+        .wellnessExperiencesSec {
+            display: none;
+        }
+
+        .wellnessExperiencesDisc {
+            margin: 0 auto;
+            padding: 0;
+            max-width: 480px;
+        }
+    }
+
+    .wellnessCardMain {
+        padding: 60px;
+        margin: 0;
+
+        .wellnessCardImg {
+            width: 100%;
+            height: 315px;
+            object-fit: cover;
+
+        }
+
+        .wellnessCardText {
+            padding: 30px;
+            max-width: 320px;
+            left: 10%;
+        }
+    }
+
+    .wellnessSliderMain {
+        overflow: hidden;
+        margin: 0 0 50px 17%;
+
+        .slider-container {
+            display: none;
+        }
+
+        .slider-container2 {
+            display: block;
+        }
+
+        .wellnessSlider {
+            .wellnessSliderImage {
+                width: 100%;
+                height: 370px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .islandMain {
+        padding: 0 60px;
+
+        .islandImg {
+            width: 100%;
+            height: 315px;
+            object-fit: cover;
+
+        }
+
+        .islandText {
+            padding: 30px;
+            max-width: 320px;
+            left: 10%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .wellnessExperiencesMain {
+        .wellnessExperiencesDisc {
+            margin: 0;
+            padding: 0 20px;
+            min-width: 100%;
+        }
+    }
+
+    .wellnessCardMain {
+        width: 100%;
+        padding: 130px 20px 0;
+
+        .wellnessCardImg {
+            height: 235px;
+        }
+
+        .wellnessCardText {
+            position: relative;
+            top: 0;
+            left: 0 !important;
+            min-width: 100%;
+            padding: 20px 0;
+
+            h4 {
+                color: var(--light-dark-para-color);
+            }
+
+            p {
+                color: var(--light-dark-para-color);
+            }
+
+            button {
+                @include btnHoverWhite;
+            }
+        }
+    }
+
+    .wellnessSliderMain {
+        max-width: 576px;
+        margin-left: 10%;
+
+        .slider-container {
+            display: none;
+        }
+
+        .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
+            display: block;
+        }
+
+        .wellnessSlider {
+
+            .wellnessSliderImage {
+                height: 280px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    .islandMain {
+        width: 100%;
+        padding: 80px 20px 0;
+        .islandImg{
+            height: 235px;
+        }
+
+        .islandText {
+            position: relative;
+            top: 0;
+            left: 0 !important;
+            min-width: 100%;
+            padding: 20px 0 0;
+
+            h4 {
+                color: var(--light-dark-para-color);
+            }
+
+            p {
+                color: var(--light-dark-para-color);
+            }
+
+            button {
+                @include btnHoverWhite;
+            }
+        }
+    }
+
+}

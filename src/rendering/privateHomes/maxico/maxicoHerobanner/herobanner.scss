@@ -1,0 +1,85 @@
+@import '../../../../scss/main';
+
+.maxicoHerobannerMain {
+    position: relative;
+
+    .maxicoHerobannerImg {
+        img {
+            height: 633px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .maxicoHerobannerText {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        max-width: 660px;
+        padding: 95px;
+        object-fit: cover;
+
+        .maxicoBannerHead {
+            h1 {
+                max-width: 460px;
+                @include h1;
+                color: var(--color-white);
+            }
+        }
+
+        .maxicoBannerPara {
+            p {
+                @include p;
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .maxicoHerobannerMain {
+        .maxicoHerobannerImg {
+            height: 512px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .maxicoHerobannerText {
+            position: relative;
+            transform: none;
+            padding: 50px;
+            min-width: 100%;
+
+            .maxicoBannerHead {
+                h1 {
+                    min-width: 100%;
+                    color: var(--dark-black-color);
+                }
+            }
+
+            .maxicoBannerPara {
+                p {
+                    color: var(--dark-black-color);
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .maxicoHerobannerMain {
+        .maxicoHerobannerImg {
+            height: 385px;
+        }
+
+        .maxicoHerobannerText {
+            padding: 25px;
+            text-align: center;
+        }
+    }
+}

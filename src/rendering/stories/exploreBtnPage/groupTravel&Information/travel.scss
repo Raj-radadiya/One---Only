@@ -1,0 +1,351 @@
+@import '../../../../scss/main';
+
+.architectureMain {
+    padding: 90px 120px;
+
+    .architectureCardMain {
+        @include flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .architectureLeft {
+            width: 32%;
+            @include flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top: 1px solid var(--dark-black-color);
+            border-bottom: 1px solid var(--dark-black-color);
+
+            .architectureDisc {
+                padding: 30px;
+                text-align: center;
+
+                .architectureCardHead {
+                    h2 {
+                        @include h2;
+                        text-decoration: underline;
+                        line-height: 35px;
+                    }
+                }
+
+                .architectureCardPara {
+                    p {
+                        @include p;
+                    }
+
+                    .para {
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+
+        .architectureRight {
+            position: relative;
+            width: 70%;
+            @include flex;
+            text-align: center;
+            align-items: center;
+
+            .ArchitectureImg {
+                img {
+                    width: 870px;
+                    height: 530px;
+                    object-fit: cover;
+                }
+            }
+
+            .playIcon {
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+
+                img {
+                    height: auto;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+.goldMain {
+    padding: 90px 120px;
+
+    .goldCardMain {
+        @include flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .goldLeft {
+            width: 70%;
+            position: relative;
+
+            .playLeftIcon {
+                position: absolute;
+                bottom: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+
+                img {
+                    height: auto;
+                    width: auto;
+                }
+            }
+
+        }
+
+        .goldRight {
+            width: 30%;
+            @include flex;
+            align-items: center;
+            border-top: 1px solid var(--dark-black-color);
+            border-bottom: 1px solid var(--dark-black-color);
+
+            .goldDisc {
+                padding: 30px;
+                text-align: center;
+
+                .goldCardHead {
+                    h2 {
+                        @include h2;
+                        text-decoration: underline;
+                        line-height: 35px;
+                    }
+                }
+
+                .goldCardPara {
+                    p {
+                        @include p;
+                    }
+
+                    .para {
+                        padding-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.farmTitleMain {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 0 50px;
+
+    .farmHead {
+        h2 {
+            @include h2;
+        }
+    }
+
+    .farmPara {
+        p {
+            @include p;
+        }
+    }
+}
+
+.farmMain {
+    display: grid;
+    grid-template-columns: 1fr 840px;
+    gap: 30px;
+    padding: 0 0 40px;
+
+    .farmLeft {
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .farmRight {
+        position: relative;
+
+        .farmImg {
+            img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+        }
+
+        .farmIcon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .architectureMain {
+        padding: 90px 60px;
+
+        .architectureCardMain {
+            position: relative;
+            top: 0;
+            gap: 30px;
+
+            .architectureLeft {
+                width: 50%;
+                min-height: 100%;
+            }
+
+            .architectureRight {
+                width: 50%;
+                margin: 0;
+
+                .ArchitectureImg {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .goldMain {
+        padding: 90px 60px;
+
+        .goldCardMain {
+            position: relative;
+            top: 0;
+            gap: 30px;
+
+            .goldRight {
+                width: 50%;
+                min-height: 100%;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .goldLeft {
+                width: 50%;
+                margin: 0;
+
+                .goldImg {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .farmTitleMain {
+        max-width: 435px;
+        padding: 0 0 30px;
+    }
+
+    .farmMain {
+        grid-template-columns: 1fr 515px;
+        gap: 20px;
+        padding: 0 15px 40px;
+
+        .farmRight {
+            .farmImg {
+                height: 310px;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+
+    .architectureMain {
+        padding: 0;
+
+        .architectureCardMain {
+            padding: 30px 20px;
+            flex-direction: column-reverse;
+
+            .architectureLeft {
+                width: 100%;
+                border: none;
+
+                .architectureDisc {
+                    padding: 0 30px;
+                }
+            }
+
+            .architectureRight {
+                width: 100%;
+                height: auto;
+
+                img {
+                    height: 260px;
+                }
+            }
+        }
+    }
+
+    .goldMain {
+        padding: 0;
+
+        .goldCardMain {
+            padding: 30px 20px;
+            flex-direction: column;
+
+            .goldRight {
+                width: 100%;
+                border: none;
+
+                .goldDisc {
+                    padding: 0 30px;
+                }
+            }
+
+            .goldLeft {
+                width: 100%;
+                height: auto;
+
+                img {
+                    height: 260px;
+                }
+            }
+        }
+    }
+
+    .farmMain {
+        grid-template-columns: 1fr;
+        padding: 0 15px 10px;
+        gap: 15px;
+
+        .farmRight {
+            height: 240px;
+
+            .farmImg {
+                height: auto;
+
+                img {
+                    height: auto;
+                }
+            }
+        }
+
+        .farmLeft {
+            img {
+                height: 480px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

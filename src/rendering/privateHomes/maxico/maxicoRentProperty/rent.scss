@@ -1,0 +1,190 @@
+@import '../../../../scss/main';
+
+.familyTimeSec {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+
+    a {
+        margin-right: 10px;
+        text-transform: uppercase;
+        @include arial;
+        @include font12;
+        @include font600;
+        letter-spacing: 1px;
+        color: var(--dark-black-color);
+    }
+
+    .family {
+        opacity: 0.7;
+    }
+}
+
+.familyTimeDisc {
+    max-width: 720px;
+    margin: 60px auto;
+    text-align: center;
+
+    .familyTimeHead {
+        h2 {
+            @include h2;
+        }
+
+    }
+
+    .familyTimePara {
+        p {
+            @include p;
+        }
+    }
+
+    .familyTimeBtn {
+        margin-top: 20px;
+
+        button {
+            @include btnHoverWhite;
+        }
+
+        :hover {
+            @include headerBtn;
+        }
+    }
+}
+
+.hostelStaysSliderMain {
+    margin-top: 40px;
+
+    .slick-slide {
+        padding: 0 10px;
+    }
+
+    .slider-container2 {
+        display: none;
+    }
+
+    .slider-container3 {
+        display: none;
+    }
+
+    .slider-container {
+        margin-bottom: 100px;
+    }
+
+    .hostelStaysSlider {
+        .hostelStaysSliderImage {
+            height: 312px;
+            margin-bottom: 20px;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .hostelStaysCardDetails {
+            padding: 0 20px;
+            text-align: start;
+
+            h4 {
+                @include h4;
+            }
+
+            p {
+                @include p;
+            }
+
+            a {
+                @include anchorArial;
+            }
+        }
+    }
+
+    .slider-container2 {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .familyTimeSec {
+        display: none;
+    }
+
+    .familyTimeDisc {
+        margin: 0 150px;
+        padding: 0;
+    }
+
+    .hostelStaysSliderMain {
+        margin-left: 17%;
+        overflow: hidden;
+
+        .slider-container {
+            display: none;
+        }
+
+        .slider-container2 {
+            display: block;
+            padding-bottom: 100px;
+        }
+
+        .hostelStaysSlider {
+            .hostelStaysSliderImage {
+                width: 100%;
+                height: 370px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .familyTimeDisc {
+        width: 100%;
+        margin: 0;
+        padding: 0 20px;
+
+        .familyTimeBtn {
+            margin-bottom: 50px;
+        }
+    }
+
+    .hostelStaysSliderMain {
+        max-width: 576px;
+        margin-left: 6%;
+        overflow: hidden;
+
+        .slider-container {
+            display: none;
+
+        }
+
+        .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
+            display: block;
+            margin-bottom: 60px;
+        }
+
+        .slick-slide {
+            padding: 0 5px;
+        }
+
+        .hostelStaysSlider {
+            .hostelStaysSliderImage {
+                height: 250px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,225 @@
+@import '../../../../scss/main';
+
+.wellnessDestinationHead {
+    text-align: center;
+    padding: 20px 0 15px;
+
+    h2 {
+        @include h2;
+
+    }
+}
+
+.wellnessDestinstionMain {
+    text-align: center;
+    margin: 0px 0 50px;
+
+    .wellnessDestinstionSlider {
+        .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
+            display: none;
+        }
+
+        .slick-slide {
+            padding: 0 10px;
+        }
+
+        .wellnessDestinstionSliderCard {
+
+            .wellnessDestinstionSliderImg {
+                height: 380px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .wellnessDestinstionSliderDetails {
+                text-align: start;
+                padding: 20px 10px 0 0;
+
+                .wellnessDestinstionSliderLocationName {
+                    h4 {
+                        @include h4;
+                    }
+                }
+
+                .wellnessDestinstionSliderLocationDetails {
+                    p {
+                        @include p;
+                    }
+                }
+
+                .wellnessDestinstionSliderLocationLink {
+                    a {
+                        @include anchorArial;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ancientMain {
+    position: relative;
+
+    .ancientImg {
+        height: 550px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .ancientText {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: 620px;
+        padding: 80px 90px;
+
+        h4 {
+            @include h4;
+            @include font24;
+            color: var(--color-white);
+        }
+
+        p {
+            @include p;
+            color: var(--color-white);
+
+        }
+
+        button {
+            @include backTransparent;
+            color: var(--color-white);
+        }
+
+        button:hover {
+            @include btnHoverWhite;
+            border: 1px solid transparent;
+        }
+
+    }
+}
+
+@media (max-width:768px) {
+    .wellnessDestinstionMain {
+        margin: 30px 0 50px;
+
+        .wellnessDestinstionSlider {
+            overflow: hidden;
+
+            .slider-container {
+                display: none;
+            }
+
+            .slider-container2 {
+                display: block;
+            }
+
+            .slider-container3 {
+                display: none;
+            }
+
+            .wellnessDestinstionSliderCard {
+                width: 100%;
+
+                .wellnessDestinstionSliderImg {
+                    width: 100%;
+                    height: 444px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .ancientMain {
+        padding: 0 60px;
+
+        .ancientImg {
+            width: 100%;
+            height: 315px;
+            object-fit: cover;
+
+        }
+
+        .ancientText {
+            padding: 30px;
+            max-width: 320px;
+            left: 10%;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .wellnessDestinationHead {
+        padding: 20px 0 0;
+    }
+
+    .wellnessDestinstionMain {
+        margin: 30px 0 30px;
+
+        .wellnessDestinstionSlider {
+            margin-left: 10%;
+            overflow: hidden;
+
+            .slider-container2 {
+                display: none;
+            }
+
+            .slider-container3 {
+                display: block;
+            }
+            .slick-slide{
+                padding: 0 5px;
+            }
+
+            .wellnessDestinstionSliderCard {
+                .wellnessDestinstionSliderImg {
+                    height: 390px;
+                }
+            }
+        }
+    }
+
+    .ancientMain {
+        width: 100%;
+        padding: 90px 20px 0;
+
+        .ancientImg {
+            height: 235px;
+        }
+
+        .ancientText {
+            position: relative;
+            top: 0;
+            left: 0 !important;
+            min-width: 100%;
+            padding: 20px 0 0;
+
+            h4 {
+                color: var(--light-dark-para-color);
+            }
+
+            p {
+                color: var(--light-dark-para-color);
+            }
+
+            button {
+                @include btnHoverWhite;
+            }
+        }
+    }
+}
