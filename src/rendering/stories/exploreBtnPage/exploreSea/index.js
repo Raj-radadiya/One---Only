@@ -51,7 +51,7 @@ export default function ExploreSea() {
 
             <div className='farryLoadMain'>
                 <div className='farryLoadVideo'>
-                    <img src={farry} alt='img' />
+                    <video src={farry} alt='video' autoPlay loop muted controls ></video>
                 </div>
                 <div className='playIcon'>
                     <img src={pause} alt='img' />

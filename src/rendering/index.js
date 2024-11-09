@@ -13,10 +13,10 @@ export default function Rendering() {
       {/* <Home /> */}
       {/* <Resorts/> */}
       {/* <Experience /> */}
-      <PrivateHomes />
-      {/* <Stories /> */}
+      {/* <PrivateHomes /> */}
+      <Stories />
       {/* <Offers/> */}
-      <Portonovi />
+      {/* <Portonovi /> */}
     </div>
   )
 }
