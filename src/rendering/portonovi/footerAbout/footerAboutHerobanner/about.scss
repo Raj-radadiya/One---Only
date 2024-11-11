@@ -1,0 +1,84 @@
+@import '../../../../scss/main';
+
+.footerAboutHerobannerMain {
+    position: relative;
+
+    .footerAboutHerobannerImg {
+        img {
+            height: 633px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .footerAboutHerobannerText {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        max-width: 660px;
+        padding: 95px;
+        object-fit: cover;
+
+        .footerAboutBannerHead {
+            h1 {
+                max-width: 460px;
+                @include h1;
+                color: var(--color-white);
+            }
+        }
+
+        .footerAboutBannerPara {
+            p {
+                @include p;
+                color: var(--color-white);
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .footerAboutHerobannerMain {
+        .footerAboutHerobannerImg {
+            height: 512px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .footerAboutHerobannerText {
+            position: relative;
+            transform: none;
+            padding: 50px;
+            min-width: 100%;
+
+            .footerAboutBannerHead {
+                h1 {
+                    min-width: 100%;
+                    color: var(--dark-black-color);
+                }
+            }
+
+            .footerAboutBannerPara {
+                p {
+                    color: var(--dark-black-color);
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .footerAboutHerobannerMain {
+        .footerAboutHerobannerImg {
+            height: 260px;
+        }
+
+        .footerAboutHerobannerText {
+            padding: 25px 25px 15px;
+        }
+    }
+}

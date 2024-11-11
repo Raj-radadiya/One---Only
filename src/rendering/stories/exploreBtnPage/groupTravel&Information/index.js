@@ -1,9 +1,9 @@
 import React from 'react'
 import './travel.scss'
-import architecture from '../../../../assets/video/oldArchitecture.webp';
-import gold from '../../../../assets/video/goldvideo.webp';
+import architecture from '../../../../assets/video/oldArchitecture.mp4';
+import gold from '../../../../assets/video/goldvideo.mp4';
 import play from '../../../../assets/icon/play.svg';
-import couple from '../../../../assets/image/couple.webp';
+import couple from '../../../../assets/video/couple.mp4';
 import bee from '../../../../assets/image/bee.webp';
 export default function GroupTravel() {
     return (
@@ -23,10 +23,7 @@ export default function GroupTravel() {
                         </div>
                         <div className='architectureRight'>
                             <div className='ArchitectureImg'>
-                                <img src={architecture} alt='img' />
-                            </div>
-                            <div className='playIcon'>
-                                <img src={play} alt='img' />
+                                <video src={architecture} alt='video' autoPlay muted controls></video>
                             </div>
                         </div>
                     </div>
@@ -37,10 +34,7 @@ export default function GroupTravel() {
                     <div className='goldCardMain'>
                         <div className='goldLeft'>
                             <div className='goldImg'>
-                                <img src={gold} alt='img' />
-                            </div>
-                            <div className='playLeftIcon'>
-                                <img src={play} alt='img' />
+                                <video src={gold} alt='video' autoPlay muted controls></video>
                             </div>
                         </div>
                         <div className='goldRight'>
@@ -72,10 +66,7 @@ export default function GroupTravel() {
                     </div>
                     <div className='farmRight'>
                         <div className='farmImg'>
-                            <img src={couple} alt='img' />
-                        </div>
-                        <div className='farmIcon'>
-                            <img src={play} alt='img' />
+                            <video src={couple} alt='video' autoPlay muted controls></video>
                         </div>
                     </div>
                 </div>

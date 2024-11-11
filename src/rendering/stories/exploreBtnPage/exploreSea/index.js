@@ -3,9 +3,9 @@ import './exploresea.scss'
 import grater from '../../../../assets/icon/icons8-greater-than-10.png';
 import boat from '../../../../assets/image/boatonwater.webp';
 import art from '../../../../assets/image/artposter.webp';
-import farry from '../../../../assets/video/farryloadvideo.webp';
+import farry from '../../../../assets/video/farryloadvideo.mp4';
 import pause from '../../../../assets/icon/play.svg';
-import disction from '../../../../assets/video/teamdisctionvideo.webp';
+import disction from '../../../../assets/video/teamdisctionvideo.mp4';
 import detailsBook from '../../../../assets/image/detailsBook.webp';
 export default function ExploreSea() {
     return (
@@ -51,10 +51,7 @@ export default function ExploreSea() {
 
             <div className='farryLoadMain'>
                 <div className='farryLoadVideo'>
-                    <video src={farry} alt='video' autoPlay loop muted controls ></video>
-                </div>
-                <div className='playIcon'>
-                    <img src={pause} alt='img' />
+                    <video src={farry} alt='video' autoPlay controls muted></video>
                 </div>
             </div>
 
@@ -75,10 +72,7 @@ export default function ExploreSea() {
                 <div className='teamDisctionMain'>
                     <div className='teamDisctuionLeft'>
                         <div className='disctionImg'>
-                            <img src={disction} alt='img' />
-                        </div>
-                        <div className='playIcon'>
-                            <img src={pause} alt='img' />
+                            <video src={disction} alt='video' autoPlay controls muted></video>
                         </div>
                     </div>
 

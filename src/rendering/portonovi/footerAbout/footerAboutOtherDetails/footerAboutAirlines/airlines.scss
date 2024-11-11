@@ -1,0 +1,508 @@
+@import '../../../../../scss/main';
+
+.aminitiesLefAarrow {
+    position: absolute;
+    top: 25%;
+    left: -25px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: auto;
+    }
+}
+
+.aminitiesRightAarrow {
+    position: absolute;
+    top: 25%;
+    right: -25px;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border: 1px solid var(--dark-black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    img {
+        height: auto;
+    }
+}
+
+.ariportCardMain {
+    padding: 90px 0;
+
+    .ariportMain {
+        @include flex;
+        justify-content: space-between;
+        gap: 50px;
+
+        .ariportLeft {
+            width: 32%;
+            @include flex;
+            align-items: center;
+
+            .ariportDisc {
+                padding: 30px;
+                text-align: center;
+
+                .ariportCardHead {
+                    h2 {
+                        @include h2;
+                        text-decoration: underline;
+                        line-height: 35px;
+                    }
+                }
+
+                .ariportCardPara {
+                    p {
+                        @include p;
+
+                        strong {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .para {
+                        padding-top: 20px;
+                    }
+                }
+
+                .ariportBtn {
+                    button {
+                        @include btnHoverWhite;
+                    }
+
+                    :hover {
+                        @include headerBtn;
+                    }
+                }
+            }
+        }
+
+        .ariportRight {
+            width: 68%;
+
+            .ariportImg {
+                img {
+                    width: 870px;
+                }
+            }
+        }
+    }
+}
+
+.historyMain {
+    .historyHead {
+        text-align: center;
+
+        .historyTitle {
+            h2 {
+                @include h2;
+            }
+        }
+
+        .historyPara {
+            p {
+                @include p;
+            }
+        }
+    }
+
+    .historyDisc {
+        @include flex;
+        justify-content: space-between;
+        gap: 100px;
+        text-align: center;
+        margin-top: 30px;
+
+        .historyLeft {
+            @include flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                @include p;
+            }
+        }
+
+        .historyRight {
+            @include flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                @include p;
+            }
+        }
+    }
+}
+
+.aminitiesHead {
+    max-width: 560px;
+    margin: 50px auto 0;
+    text-align: center;
+
+    .aminitiesTitle {
+        h2 {
+            @include h2;
+        }
+    }
+
+    .aminitiesPara {
+        p {
+            @include p;
+        }
+    }
+}
+
+.aminitiesMain {
+    margin: 80px 0 0;
+    text-align: center;
+
+    .slider-container3 {
+        display: none;
+    }
+
+    .slick-slide {
+        padding: 0 10px;
+    }
+
+    .aminitiesSlider {
+        text-align: start;
+
+        .aminitiesSliderImage {
+            overflow: hidden;
+            height: 393px;
+            margin-bottom: 20px;
+            transition: 0.3s ease-in-out;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .aminitiesCardDetails {
+            padding-right: 50px;
+
+            .aminitiesdetails {
+                margin-bottom: 25px;
+
+                h4 {
+                    @include h4;
+                }
+            }
+
+            p {
+                @include p;
+            }
+        }
+    }
+
+    .slider-container2 {
+        display: none;
+    }
+}
+
+.usefuldetailsMain {
+    .usefuldetailsTitle {
+        margin: 0 auto;
+        max-width: 800px;
+        text-align: center;
+        padding-bottom: 15px;
+
+        .usefulDetailsHead {
+            h2 {
+                @include h2;
+            }
+        }
+
+        .useFulDetailsPara {
+            p {
+                @include p;
+            }
+        }
+    }
+
+    .useFulDetailsDiscMain {
+        background-color: var(--card-bg-color);
+
+        .useFulDetailsDisc {
+            @include flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 80px 0 40px;
+
+            .useFulDetailsCard {
+                flex-basis: calc(33% - 30px);
+                padding: 0 0 40px;
+
+                .useFulDetailstHead {
+                    padding: 0 0 15px;
+
+                    strong {
+                        @include anchorArial;
+                    }
+                }
+
+                .useFulDetailsPara {
+                    p {
+                        @include p;
+
+                        a {
+                            color: var(--dark-black-color);
+                        }
+                    }
+                }
+
+                .useFulDetailsLink {
+                    a {
+                        @include font600;
+                        color: var(--dark-black-color);
+                        @include arial;
+                        letter-spacing: 0.5px;
+                        @include font15;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mapMain {
+    padding: 70px 0;
+
+    iframe {
+        width: 100%;
+        height: 420px;
+        border: none;
+    }
+}
+
+@media (max-width:768px) {
+    .aminitiesLefAarrow {
+        display: none;
+    }
+
+    .aminitiesRightAarrow {
+        display: none;
+    }
+
+    .ariportCardMain {
+        padding: 90px 60px;
+
+        .ariportMain {
+            gap: 20px;
+
+            .ariportLeft {
+                width: 50%;
+                margin: 0;
+            }
+
+            .ariportRight {
+                width: 50%;
+                min-height: 100%;
+
+                .ariportImg {
+                    height: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+
+    .historyMain {
+        .historyHead {
+            max-width: 480px;
+            margin: 0 auto;
+
+        }
+
+        .historyDisc {
+            padding: 0 20px;
+            gap: 40px;
+        }
+    }
+
+    .aminitiesMain {
+        margin: 20px 0 0 28%;
+
+        .slider-container {
+            display: none;
+        }
+
+        .slider-container2 {
+            display: block;
+        }
+
+        .aminitiesSlider {
+            .aminitiesSliderImage {
+                width: 100%;
+                height: 325px;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .usefuldetailsMain {
+        .usefuldetailsTitle {
+            max-width: 480px;
+        }
+
+        .useFulDetailsDiscMain {
+            .useFulDetailsDisc {
+                padding: 80px 60px 0;
+
+                .useFulDetailsCard {
+                    flex-basis: calc(50% - 30px);
+                }
+            }
+        }
+    }
+
+    .mapMain {
+        padding: 40px 30px;
+
+        iframe {
+            height: 830px;
+            // padding: 0 30px;
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .ariportCardMain {
+        padding: 0;
+
+        .ariportMain {
+            padding: 30px 20px;
+            flex-direction: column-reverse;
+
+            .ariportLeft {
+                width: 100%;
+                height: auto;
+
+                img {
+                    height: 260px;
+                }
+            }
+
+            .ariportRight {
+                width: 100%;
+                border: none;
+
+                .ariportDisc {
+                    padding: 0 30px;
+                }
+            }
+
+
+        }
+    }
+
+    .historyMain {
+        margin: 30px 0 0;
+        padding: 0 20px;
+
+        .historyHead {
+            min-width: 100%;
+        }
+
+        .historyDisc {
+            flex-direction: column;
+            gap: 0;
+            padding: 0;
+        }
+    }
+
+    .aminitiesMain {
+        max-width: 576px;
+        padding: 0;
+        margin: 0 0 50px 6%;
+
+
+        .slider-container {
+            display: none;
+        }
+
+        .slider-container2 {
+            display: none;
+
+        }
+
+        .slider-container3 {
+            display: block;
+        }
+
+        .slick-slide {
+            padding: 0 5px;
+        }
+
+        .aminitiesSlider {
+            .aminitiesSliderImage {
+                height: 330px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .aminitiesCardDetails {
+                padding-right: 20px;
+
+                a {
+                    @include anchorArial;
+                }
+            }
+        }
+    }
+
+    .usefuldetailsMain {
+        .useFulDetailsDiscMain {
+            .useFulDetailsDisc {
+                padding: 40px 40px 0;
+
+                .useFulDetailsCard {
+                    flex-basis: 100%;
+                    width: 100%;
+                    padding: 0 0 20px;
+
+                    .useFulDetailsPara {
+                        width: auto;
+                    }
+
+                    .useFulDetailsLink {
+                        a {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mapMain {
+        height: 740px;
+
+        iframe {
+            height: 100%;
+        }
+    }
+}
