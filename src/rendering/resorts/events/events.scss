@@ -1,7 +1,7 @@
 @import '../../../scss/main';
 
 .event {
-    margin-top: 80px;
+    margin-top: 150px;
 
     .eventDisc {
         margin: 0 auto;
@@ -132,40 +132,43 @@
 
 
 @media (max-width:768px) {
-    .eventMain {
-        .eventCard {
-            width: 341px !important;
+    .event {
+        margin: 0;
+        .eventMain {
+            .eventCard {
+                width: 341px !important;
 
-            .eventExploreImg {
-                max-height: 227px;
-                object-fit: cover;
+                .eventExploreImg {
+                    max-height: 227px;
+                    object-fit: cover;
 
-                img {
-                    width: 100%;
-                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .eventText {
+                    padding: 20px 30px 0 20px !important;
                 }
             }
+        }
 
-            .eventText {
-                padding: 20px 30px 0 20px !important;
+        .exploreMain {
+            padding: 0 60px;
+
+            .exploreImg {
+                width: 100%;
+                height: 315px;
+                object-fit: cover;
+
             }
-        }
-    }
 
-    .exploreMain {
-        padding: 0 60px;
-
-        .exploreImg {
-            width: 100%;
-            height: 315px;
-            object-fit: cover;
-
-        }
-
-        .exploreText {
-            padding: 30px;
-            max-width: 320px;
-            left: 10%;
+            .exploreText {
+                padding: 30px;
+                max-width: 320px;
+                left: 10%;
+            }
         }
     }
 }

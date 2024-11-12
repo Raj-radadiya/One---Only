@@ -47,6 +47,13 @@ export default function Adventure() {
     dots: false,
     infinite: false,
     speed: 500,
+    slidesToShow: 1.3,
+    slidesToScroll: 1
+  };
+  const grid3 = {
+    dots: false,
+    infinite: false,
+    speed: 500,
     slidesToShow: 1.07,
     slidesToScroll: 1
   };
@@ -158,6 +165,58 @@ export default function Adventure() {
                 </div>
                 <div className="slider-container2">
                   <Slider {...grid2}>
+                    <div className='advantureCard'>
+                      <div className='acardImg'>
+                        <img src={advantureFirst} alt='first' />
+                      </div>
+                      <div className='acardDisc'>
+                        <div className='acrdHead'>
+                          <h4>One&Only Royal Mirage</h4>
+                        </div>
+                        <div className='acardPara'>
+                          <p>In the cosmopolitan heart of Dubai, One&Only Royal Mirage evokes timeless Arabian splendour and elevated energy. A true resort, this urban shoreside oasis is spread across three distinct spaces, with a pristine kilometre-long private beach and curated dining and adventure inspired by the magic of Arabia.</p>
+                        </div>
+                        <div className='acardLink'>
+                          <a href='#'>Discover</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='advantureCard'>
+                      <div className='acardImg'>
+                        <img src={advantureSecond} alt='first' />
+                      </div>
+                      <div className='acardDisc'>
+                        <div className='acrdHead'>
+                          <h4>One&Only The Palm</h4>
+                        </div>
+                        <div className='acardPara'>
+                          <p>One&Only The Palm is situated on Dubai’s exclusive ‘riviera’, where coastal tranquillity meets the energy of the city’s urban skyline. Refined and assured, this boutique beach resort is infused with endless romanticism, elegance and creativity. Discover a space for every mood, from Chef Yannick Alléno’s Michelin-starred cuisine to exceptional wellness at Guerlain Spa.</p>
+                        </div>
+                        <div className='acardLink'>
+                          <a href='#'>Discover</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className='advantureCard'>
+                      <div className='acardImg'>
+                        <img src={advantureThird} alt='first' />
+                      </div>
+                      <div className='acardDisc'>
+                        <div className='acrdHead'>
+                          <h4>One&Only One Za'abeel</h4>
+                        </div>
+                        <div className='acardPara'>
+                          <p>Imagine a place that’s the centre of everything. Of culture, of cuisine, of entertainment, of business. Where the fascinating gravitate by day, and circulate by night, and where everything the city offers can be curated, just for you. Welcome to One&Only One Za’abeel, the world’s first ultra-luxury vertical urban resort in the soulful heart of Dubai.</p>
+                        </div>
+                        <div className='acardLink'>
+                          <a href='#'>Discover</a>
+                        </div>
+                      </div>
+                    </div>
+                  </Slider>
+                </div>
+                <div className="slider-container3">
+                  <Slider {...grid3}>
                     <div className='advantureCard'>
                       <div className='acardImg'>
                         <img src={advantureFirst} alt='first' />

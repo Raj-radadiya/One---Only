@@ -8,7 +8,7 @@ import Wellness from './wellness'
 export default function Experience() {
   return (
     <div>
-      {/* <Activity/>         */}
+      <Activity />
       {/* <Cuisine/> */}
       {/* <Villa/> */}
       {/* <Family/> */}

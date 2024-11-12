@@ -17,6 +17,14 @@ export default function Land() {
     dots: false,
     infinite: false,
     speed: 500,
+    slidesToShow: 1.5,
+    slidesToScroll: 1,
+    initialSlide: 0
+  }
+  var settings3 = {
+    dots: false,
+    infinite: false,
+    speed: 500,
     slidesToShow: 1.1,
     slidesToScroll: 1,
     initialSlide: 0
@@ -72,9 +80,83 @@ export default function Land() {
                 </div>
               </Slider>
             </div>
-
             <div className="slider-container2">
               <Slider {...settings2}>
+                <div className='landBPara'>
+                  <div className='land'>
+                    <div className='landImg'>
+                      <img src={landFirst} alt='land' />
+                    </div>
+                    <div className='landText'>
+                      <div className='landPara'>
+                        <p>The adventure continues at One&Only Cape Town, with a hike to the summit of majestic Table Mountain. The natural nirvana stretching a full kilometre into the sky is a noteworthy achievement for all abilities. See Cape Town in all its glory from this captivating sky view and wind down after with a unique wine-tasting exploration with our master sommelier.</p>
+                      </div>
+                      <div className='landLink'>
+                        <a href='#'>discover</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='landBottom'>
+                    <div className='landPara'>
+                      <p>The adventure continues at One&Only Cape Town, with a hike to the summit of majestic Table Mountain. The natural nirvana stretching a full kilometre into the sky is a noteworthy achievement for all abilities. See Cape Town in all its glory from this captivating sky view and wind down after with a unique wine-tasting exploration with our master sommelier.</p>
+                    </div>
+                    <div className='landLink'>
+                      <a href='#'>discover</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='landBPara'>
+                  <div className='land'>
+                    <div className='landImg'>
+                      <img src={landSecond} alt='land' />
+                    </div>
+                    <div className='landText'>
+                      <div className='landPara'>
+                        <p>The adventure continues at One&Only Cape Town, with a hike to the summit of majestic Table Mountain. The natural nirvana stretching a full kilometre into the sky is a noteworthy achievement for all abilities. See Cape Town in all its glory from this captivating sky view and wind down after with a unique wine-tasting exploration with our master sommelier.</p>
+                      </div>
+                      <div className='landLink'>
+                        <a href='#'>discover</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='landBottom'>
+                    <div className='landPara'>
+                      <p>The adventure continues at One&Only Cape Town, with a hike to the summit of majestic Table Mountain. The natural nirvana stretching a full kilometre into the sky is a noteworthy achievement for all abilities. See Cape Town in all its glory from this captivating sky view and wind down after with a unique wine-tasting exploration with our master sommelier.</p>
+                    </div>
+                    <div className='landLink'>
+                      <a href='#'>discover</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='landBPara'>
+                  <div className='land'>
+                    <div className='landImg'>
+                      <img src={landThird} alt='land' />
+                    </div>
+                    <div className='landText'>
+                      <div className='landPara'>
+                        <p>The adventure continues at One&Only Cape Town, with a hike to the summit of majestic Table Mountain. The natural nirvana stretching a full kilometre into the sky is a noteworthy achievement for all abilities. See Cape Town in all its glory from this captivating sky view and wind down after with a unique wine-tasting exploration with our master sommelier.</p>
+                      </div>
+                      <div className='landLink'>
+                        <a href='#'>discover</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className='landBottom'>
+                    <div className='landPara'>
+                      <p>The adventure continues at One&Only Cape Town, with a hike to the summit of majestic Table Mountain. The natural nirvana stretching a full kilometre into the sky is a noteworthy achievement for all abilities. See Cape Town in all its glory from this captivating sky view and wind down after with a unique wine-tasting exploration with our master sommelier.</p>
+                    </div>
+                    <div className='landLink'>
+                      <a href='#'>discover</a>
+                    </div>
+                  </div>
+                </div>
+              </Slider>
+            </div>
+            <div className="slider-container3">
+              <Slider {...settings3}>
                 <div className='landBPara'>
                   <div className='land'>
                     <div className='landImg'>

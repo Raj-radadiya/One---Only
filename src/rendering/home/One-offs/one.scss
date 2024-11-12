@@ -1,13 +1,9 @@
 @import '../../../scss/main';
 
-.space {
-    height: 45px;
-}
-
 .left_arrow {
     position: absolute;
     top: 25%;
-    left: -25px;
+    left: -20px;
     background-color: white;
     height: 50px;
     width: 50px;
@@ -24,7 +20,7 @@
 .right_arrow {
     position: absolute;
     top: 25%;
-    right: -10px;
+    right: -20px;
     background-color: white;
     height: 50px;
     width: 50px;
@@ -41,6 +37,7 @@
 
 .oneOffMain {
     text-align: center;
+    margin: 45px 0 0;
 
     .offDetails {
         max-width: 700px;
@@ -49,12 +46,7 @@
 
         .oneHeading {
             h2 {
-                @include font24;
-                @include times;
-                letter-spacing: 3px;
-                text-transform: uppercase;
-                @include font500;
-                padding-bottom: 18px;
+                @include h2;
             }
         }
 
@@ -78,10 +70,12 @@
 
     .offSliderMain {
         padding: 0 15px;
+        margin: 0 0 20px;
 
         .slick-slide {
-            padding: 0 10px;
+            padding: 0 8px;
         }
+
 
         .offSlider {
             .offSliderImage {
@@ -94,11 +88,6 @@
                     height: 100%;
                     object-fit: cover;
                 }
-
-                &:hover {
-                    transform: scale(0.8);
-                }
-
             }
 
 
@@ -135,50 +124,15 @@
                         }
 
                     }
-
-                    &:hover {
-                        .offSliderImage {
-                            img {
-                                transform: scale(0.8);
-                                transition: 0.3s ease-in-out;
-                            }
-                        }
-                    }
-
-
-                    // transform: scale(1.1);
-                    // transition: 0.3s ease-in-out;
-
-                    // .offSliderImage {
-                    //     img {
-                    //         transform: scale(0.8);
-                    //     }
-                    // }
-
-                    // .offlinks:hover {
-                    //     // .offSliderImage {
-                    //     //     img {
-                    //     //         transform: scale(0.8);
-                    //     //     }
-                    //     // }
-
-                    //         a{
-                    //             color: var(--dark-black-color);
-                    //             border-bottom: 1px solid var(--dark-black-color);
-
-                    //         }
-
-                    // }
-
-
                 }
-
             }
-
-
         }
 
         .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
             display: none;
         }
     }
@@ -202,17 +156,23 @@
         display: none;
     }
 
+
     .oneOffMain {
         .offDetails {
             max-width: 436px;
         }
-    }
 
-    .offSliderMain {
-        max-width: 768px;
+        .offSliderMain {
+            margin-left: 28%;
+            padding: 0;
 
-        .slider-container {
-            max-width: 768px;
+            .slider-container {
+                display: none;
+            }
+
+            .slider-container2 {
+                display: block !important;
+            }
 
             .offSlider {
                 .offSliderImage {
@@ -225,7 +185,13 @@
                     }
                 }
 
+                .offCardDetails {
+                    padding: 0 30px 0 0;
 
+                    a {
+                        @include anchorArial;
+                    }
+                }
             }
         }
     }
@@ -248,10 +214,6 @@
 }
 
 @media (max-width:576px) {
-    .space {
-        display: none;
-    }
-
     .oneOffMain {
         .offDetails {
             padding: 0 20px;
@@ -265,7 +227,6 @@
         }
 
         .offSliderMain {
-            max-width: 576px;
             padding: 0;
             margin: 0 0 50px 6%;
 
@@ -275,12 +236,11 @@
             }
 
             .slider-container2 {
-                width: auto;
-                display: block;
+                display: none !important;
+            }
 
-                .slick-slide {
-                    padding: 0 5px;
-                }
+            .slider-container3 {
+                display: block;
             }
 
             .offSlider {

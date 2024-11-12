@@ -5,8 +5,8 @@ import offImgfirst from '../../../assets/image/offImgfirst.webp';
 import offImgSecond from '../../../assets/image/offImgsecond.webp';
 import offImgThird from '../../../assets/image/offImgthird.webp';
 import offImgForth from '../../../assets/image/offImgforth.webp';
-import left from '../../../assets/icon/icons8-left-25.png';
-import right from '../../../assets/icon/icons8-right-20.png';
+import left from '../../../assets/icon/icons8-left-arrow-15.png';
+import right from '../../../assets/icon/icons8-right-arrow-15.png';
 import resortImage from '../../../assets/image/resortImg.webp';
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -46,6 +46,16 @@ export default function OneOffs() {
         dots: false,
         infinite: false,
         speed: 500,
+        slidesToShow: 1.65,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+    }
+    var settings3 = {
+        dots: false,
+        infinite: false,
+        speed: 500,
         slidesToShow: 1.1,
         slidesToScroll: 1,
         initialSlide: 0,
@@ -54,7 +64,6 @@ export default function OneOffs() {
     }
     return (
         <div>
-            <div className='space'></div>
             <div className='oneOffMain'>
                 <div className='offDetails'>
                     <div className='oneHeading'>
@@ -183,9 +192,59 @@ export default function OneOffs() {
                                 </div>
                             </Slider>
                         </div>
+                        <div className="slider-container3">
+                            <Slider {...settings3}>
+
+                                <div className='offSlider'>
+                                    <div className='offSliderImage'>
+                                        <img src={offImgfirst} alt='img' />
+                                    </div>
+                                    <div className='offCardDetails'>
+                                        <div className='details'>
+                                            <h4>SECRETS OF AESTHESIS</h4>
+                                        </div>
+                                        <p>Discover the Athenian Riviera through the lens of local experts and artisans. Sail the Aegean, explore ancient ruins, and savour the tastes of land and sea. Experience the charm of One&Only Aesthesis through captivating stories.</p>
+                                        <a href='#'>explore</a>
+                                    </div>
+                                </div>
+                                <div className='offSlider'>
+                                    <div className='offSliderImage'>
+                                        <img src={offImgSecond} alt='img' />
+                                    </div>
+                                    <div className='offCardDetails'>
+                                        <div className='details'>
+                                            <h4>SECRETS OF AESTHESIS</h4>
+                                        </div>
+                                        <p>A land of rugged natural beauty and cultural rituals, Kéa Island feels like a closely guarded secret. Let us reveal the wonders of this fabled island as locals share untold stories and exceptional experiences of Kéa.</p>
+                                        <a href='#'>explore</a>
+                                    </div>
+                                </div>
+                                <div className='offSlider'>
+                                    <div className='offSliderImage'>
+                                        <img src={offImgThird} alt='img' />
+                                    </div>
+                                    <div className='offCardDetails'>
+                                        <h4>SECRETS OF AESTHESIS</h4>
+                                        <p>On the doorstep of Dubai’s financial, retail and culinary hubs, One&Only One Za’abeel is the place to be for foodies, business travellers, fashionistas, families and wellness seekers.</p>
+                                        <a href='#'>explore</a>
+                                    </div>
+                                </div>
+                                <div className='offSlider'>
+                                    <div className='offSliderImage'>
+                                        <img src={offImgForth} alt='img' />
+                                    </div>
+                                    <div className='offCardDetails'>
+                                        <div className='details'>
+                                            <h4>SECRETS OF AESTHESIS</h4>
+                                        </div>
+                                        <p>One&Only Aesthesis celebrated its Grand Opening over three glittering days, as A-list celebrities and global tastemakers including Kylie Minogue, Joe Jonas, Kim Cattrall, Olivier Rousteing and Luke Evans ushered in a new golden era on the Athenian Riviera.</p>
+                                        <a href='#'>explore</a>
+                                    </div>
+                                </div>
+                            </Slider>
+                        </div>
                     </div>
                 </div>
-                <div className='space'></div>
             </div>
             <div className='container3'>
                 <div className='resortImg'>

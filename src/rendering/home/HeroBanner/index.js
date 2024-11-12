@@ -7,6 +7,6 @@ export default function HeroBanner() {
         <div>
             <Slider1 />
         </div>
-        
+
     )
 }

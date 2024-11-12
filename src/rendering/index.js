@@ -11,12 +11,12 @@ export default function Rendering() {
   return (
     <div>
       {/* <Home /> */}
-      {/* <Resorts/> */}
+      <Resorts />
       {/* <Experience /> */}
       {/* <PrivateHomes /> */}
       {/* <Stories /> */}
       {/* <Offers/> */}
-      <Portonovi />
+      {/* <Portonovi /> */}
     </div>
   )
 }

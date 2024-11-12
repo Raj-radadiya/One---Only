@@ -152,7 +152,7 @@ export default function Sea() {
             </div>
 
 
-            {/* <div className='container5'>
+            <div className='container5'>
                 <div className='adriaticMain'>
                     <div className='adriaticDisc'>
                         <div className='adriaticText'>
@@ -171,7 +171,7 @@ export default function Sea() {
                         <img src={adriaticImg} alt='img' />
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div >
     )
 }

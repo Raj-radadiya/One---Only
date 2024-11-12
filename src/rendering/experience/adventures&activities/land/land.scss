@@ -1,11 +1,11 @@
 @import '../../../../scss/main';
 
 .landMain {
-    margin: 70px 0;
+    margin: 30px 0 70px;
     text-align: center;
 
     .landHead {
-        padding-top: 20px;
+        padding: 20px 0;
 
         h2 {
             @include h2;
@@ -14,6 +14,10 @@
 
     .landSlider {
         .slider-container2 {
+            display: none;
+        }
+
+        .slider-container3 {
             display: none;
         }
 
@@ -105,42 +109,43 @@
         }
 
         .landSlider {
+            overflow: hidden;
+
             .slider-container {
                 display: none;
             }
 
             .slider-container2 {
                 display: block;
-                overflow: hidden;
+            }
 
-                .land {
-                    .landImg::before {
-                        display: none;
-                    }
+            .land {
+                .landImg::before {
+                    display: none;
+                }
 
-                    .landText {
-                        .landPara {
-                            p {
+                .landText {
+                    .landPara {
+                        p {
+                            color: var(--dark-black-color);
+                        }
+
+                        .landLink {
+                            a {
                                 color: var(--dark-black-color);
                             }
-
-                            .landLink {
-                                a {
-                                    color: var(--dark-black-color);
-                                }
-                            }
-
                         }
-                    }
 
-                    &:hover .landText {
-                        display: none;
                     }
                 }
 
-                .landBottom {
-                    display: block;
+                &:hover .landText {
+                    display: none;
                 }
+            }
+
+            .landBottom {
+                display: block;
             }
         }
     }
@@ -154,6 +159,16 @@
         text-align: start;
 
         .landSlider {
+            overflow: hidden;
+
+            .slider-container2 {
+                display: none;
+            }
+
+            .slider-container3 {
+                display: block;
+            }
+
             .landBPara {
                 height: auto;
 

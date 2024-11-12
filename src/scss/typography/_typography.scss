@@ -18,6 +18,14 @@
     letter-spacing: 2px;
 }
 
+@mixin anchorUnderline {
+    @include arial;
+    font-size: 15px;
+    color: var(--light-dark-para-color);
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+}
+
 @mixin h1 {
     font-size: 26px;
     margin-bottom: 15px;

@@ -88,7 +88,7 @@
         }
 
         .acard {
-            margin: 0 auto;
+            margin: 80px auto 0;
 
             .slick-slide {
                 padding: 0 10px;
@@ -96,7 +96,6 @@
 
             .advantureCard {
                 .acardImg {
-                    margin: 30px 0;
 
                     img {
                         height: 312px;
@@ -128,11 +127,7 @@
                 }
 
                 .slick-list {
-                    padding: 0 20px;
-                }
-
-                .slick-slide {
-                    margin: 0 -10px;
+                    padding: 0 10px;
                 }
             }
         }
@@ -176,25 +171,24 @@
                     }
 
                     .slider-container2 {
-                        margin-left: 25%;
+                        margin-left: 18%;
                         display: block;
                         overflow: hidden;
+                    }
 
-                        .advantureCard {
-                            width: 250px;
+                    .advantureCard {
 
-                            .acardImg {
-                                height: 260px;
+                        .acardImg {
+                            height: 260px;
 
-                                img {
-                                    height: 100%;
-                                    width: 100%;
-                                }
+                            img {
+                                height: 100%;
+                                width: 100%;
                             }
+                        }
 
-                            .acardDisc {
-                                padding: 20px 20px 0;
-                            }
+                        .acardDisc {
+                            padding: 20px 20px 0;
                         }
                     }
                 }
@@ -235,6 +229,9 @@
                 }
 
                 .acard {
+                    overflow: hidden;
+                    margin-left: 7%;
+
                     .slider-container {
                         display: none;
                     }
@@ -244,25 +241,28 @@
                     }
 
                     .slider-container2 {
-                        margin-left: 4%;
+                        display: none;
+                    }
+
+                    .slider-container3 {
                         display: block;
+                    }
 
-                        .advantureCard {
-                            max-width: 354px;
-                            padding: 0;
-                            margin: 10px 0 20px 0;
+                    .advantureCard {
+                        max-width: 354px;
+                        padding: 0;
+                        margin: 10px 0 20px 0;
 
-                            .acardImg {
-                                margin: 0;
+                        .acardImg {
+                            margin: 0;
 
-                                img {
-                                    height: 250px;
-                                }
+                            img {
+                                height: 250px;
                             }
+                        }
 
-                            .acardDisc {
-                                padding: 0 20px 0 0;
-                            }
+                        .acardDisc {
+                            padding: 0 20px 0 0;
                         }
                     }
                 }
@@ -276,6 +276,7 @@
             .slider-container3 {
                 display: block;
             }
+
             .slider-container2 {
                 display: none;
             }
