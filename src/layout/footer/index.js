@@ -6,6 +6,7 @@ import x from '../../assets/icon/twitter.png';
 import fb from '../../assets/icon/facebook.png';
 import insta from '../../assets/icon/instagram.png';
 import youtube from '../../assets/icon/youtube.png';
+import down from '../../assets/icon/icons8-down-arrow-12.png';
 export default function Footer() {
   return (
     <div>
@@ -31,6 +32,9 @@ export default function Footer() {
                     <a href='#'>Private Homes</a>
                   </li>
                 </ul>
+                <div className='footerDownArrow'>
+                  <img src={down} alt='img' />
+                </div>
               </div>
               <div className='link1'>
                 <span>News and Awards</span>
@@ -45,6 +49,9 @@ export default function Footer() {
                     <a href='#'>Newsletter Signup</a>
                   </li>
                 </ul>
+                <div className='footerDownArrow'>
+                  <img src={down} alt='img' />
+                </div>
               </div>
               <div className='link1'>
                 <span>Terms & Conditions</span>
@@ -59,6 +66,9 @@ export default function Footer() {
                     <a href='#'>Sitemap</a>
                   </li>
                 </ul>
+                <div className='footerDownArrow'>
+                  <img src={down} alt='img' />
+                </div>
               </div>
               <div className='link1'>
                 <span>Contact</span>
@@ -68,6 +78,9 @@ export default function Footer() {
                   </li>
 
                 </ul>
+                <div className='footerDownArrow'>
+                  <img src={down} alt='img' />
+                </div>
               </div>
               <div className='link1'>
                 <span>Kerzner</span>
@@ -85,17 +98,20 @@ export default function Footer() {
                     <a href='#'>Careers</a>
                   </li>
                 </ul>
+                <div className='footerDownArrow'>
+                  <img src={down} alt='img' />
+                </div>
               </div>
             </div>
           </div>
 
           <div className='socialLink'>
             <div className='socialMedia'>
-              <img src={linkdin} alt='linkdin'/>
-              <img src={x} alt='x'/>
-              <img src={fb} alt='fb'/>
-              <img src={insta} alt='insta'/>
-              <img src={youtube} alt='youtube'/>
+              <img src={linkdin} alt='linkdin' />
+              <img src={x} alt='x' />
+              <img src={fb} alt='fb' />
+              <img src={insta} alt='insta' />
+              <img src={youtube} alt='youtube' />
             </div>
             <div className='writes'>
               <p>2024 © Kerzner International Limited. All Rights Reserved.</p>

@@ -6,7 +6,7 @@
     .footerMain {
         display: flex;
         padding: 55px 0 18px;
-        border-bottom: 1px solid var(--bottom-border-color);
+        border-bottom: 1px solid var(--footer-border-color);
 
         .footerLogo {
             width: 230px;
@@ -23,8 +23,13 @@
 
         .linkFooter {
             @include grid5;
+
             .link1 {
                 width: 200px;
+
+                .footerDownArrow {
+                    display: none;
+                }
 
                 span {
                     @include anchor;
@@ -80,4 +85,89 @@
         }
     }
 
+}
+
+@media (max-width:768px) {
+    .footer {
+        padding: 0 35px;
+
+        .footerMain {
+            flex-direction: column;
+            gap: 40px;
+
+            .footerLogo {
+                width: 100%;
+                margin: 0 auto;
+
+                .FooterImg {
+                    margin: 0 auto;
+                    max-width: 150px;
+                    max-height: 40px;
+                }
+            }
+
+            .linkFooter {
+                .link1 {
+                    width: auto;
+                }
+            }
+        }
+
+        .socialLink {
+            .socialMedia {
+                width: 50%;
+            }
+
+            .writes {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width:576px) {
+    .footer {
+        .footerMain {
+            padding: 0;
+
+            .footerLogo {
+                padding: 40px 0 0;
+            }
+
+            .linkFooter {
+                grid-template-columns: 1fr;
+
+                .link1 {
+                    @include flex;
+                    justify-content: space-between;
+                    padding: 20px 0;
+                    border-top: 1px solid var(--footer-border-color);
+
+                    ul {
+                        display: none;
+                    }
+
+                    .footerDownArrow {
+                        display: block;
+                    }
+
+                }
+            }
+        }
+
+        .socialLink {
+            flex-direction: column;
+            gap: 40px;
+
+            .socialMedia {
+                width: 100%;
+                gap: 30px;
+            }
+
+            .writes {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
 }

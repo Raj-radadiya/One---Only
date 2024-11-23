@@ -1,65 +1,4 @@
 @import '../../../../scss/main';
-
-// .villaMain {
-//     text-align: center;
-//     margin: 100px 0 100px;
-
-//     .villaLocation {
-//         max-width: 550px;
-//         margin: 0 auto;
-
-//         h2 {
-//             @include h2;
-//         }
-//     }
-
-//     .villaSliderMain {
-//         margin-top: 40px;
-//         display: flex;
-
-//         .slick-slide {
-//             padding: 0 10px;
-//         }
-
-//         .villaSlider {
-//             .villaSliderImage {
-//                 height: 393px;
-
-//                 img {
-//                     width: 100%;
-//                     height: 100%;
-//                     object-fit: cover;
-//                 }
-//             }
-
-//             .villaCardDetails {
-//                 padding: 20px 50px 0 0;
-//                 padding-right: 50px;
-//                 text-align: start;
-
-//                 .VillaDetails {
-//                     margin-bottom: 15px;
-
-//                     h4 {
-//                         @include h4;
-//                     }
-//                 }
-
-//                 p {
-//                     @include p;
-//                 }
-
-//                 a {
-//                     @include anchorArial;
-//                 }
-//             }
-//         }
-
-//         .slider-container2 {
-//             display: none;
-//         }
-//     }
-// }
 .villaLocation {
     max-width: 550px;
     text-align: center;
@@ -72,6 +11,7 @@
 
 .villaSliderMain {
     margin-top: 40px;
+    
 
     .slick-slide {
         padding: 0 10px;

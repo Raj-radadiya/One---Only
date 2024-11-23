@@ -30,6 +30,7 @@
     }
 
     .eventForm {
+        padding: 0 0 50px;
         .eventFormInput {
             border-bottom: 1px solid var(--bottom-border-color);
             padding: 30px 0;
@@ -396,11 +397,24 @@
                         padding: 30px 0 0;
 
                         .eventAdditionalInfoMainLeft {
+                            .eventAdditionalInfoHead {
+                                input {
+                                    width: 100%;
+                                }
+                            }
+
                             max-width: 325px;
                         }
 
                         .eventAdditionalInfoMainRight {
                             max-width: 325px;
+
+                            .eventAdditionalInfoHead {
+                                input {
+                                    width: 100%;
+                                }
+                            }
+
                         }
                     }
                 }

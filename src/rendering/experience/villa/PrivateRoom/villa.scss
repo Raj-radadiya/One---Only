@@ -37,7 +37,7 @@
 
 .villaCardMain {
     text-align: center;
-    margin: 0px 0 50px;
+    margin: 0px 0 100px;
 
     .villaHead {
         padding: 20px 0;
@@ -146,10 +146,12 @@
             .slider-container3 {
                 display: block;
             }
-            .villaCard{
-                .villaImg{
+
+            .villaCard {
+                .villaImg {
                     max-height: 390px;
-                    img{
+
+                    img {
                         height: 100%;
                     }
                 }

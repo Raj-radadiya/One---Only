@@ -12,7 +12,7 @@ export default function Cuisine() {
       <Dine />
       <Partner />
       <Test />
-      <Location/>
+      <Location />
     </div>
   )
 }

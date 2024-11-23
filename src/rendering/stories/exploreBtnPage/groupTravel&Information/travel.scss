@@ -184,13 +184,15 @@
 
             .architectureRight {
                 width: 50%;
-                margin: 0;
+                // margin: 0;
 
                 .ArchitectureImg {
                     height: 100%;
+                    width: 100%;
 
-                    img {
-                        height: 100%;
+                    video {
+                        height: 310px;
+                        width: 100%;
                     }
                 }
             }
@@ -221,8 +223,8 @@
                 .goldImg {
                     height: 100%;
 
-                    img {
-                        height: 100%;
+                    video {
+                        height: 350px;
                         object-fit: cover;
                     }
                 }
@@ -244,7 +246,7 @@
             .farmImg {
                 height: 310px;
 
-                img {
+                video {
                     height: 100%;
                 }
             }

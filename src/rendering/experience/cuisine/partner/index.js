@@ -56,7 +56,7 @@ export default function Partner() {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 1.3,
+        slidesToShow: 1.2,
         slidesToScroll: 1,
         initialSlide: 0,
     }

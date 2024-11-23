@@ -10,11 +10,11 @@ import Portonovi from './portonovi'
 export default function Rendering() {
   return (
     <div>
-      {/* <Home /> */}
+      <Home />
       <Resorts />
-      {/* <Experience /> */}
-      {/* <PrivateHomes /> */}
-      {/* <Stories /> */}
+      <Experience />
+      <PrivateHomes />
+      <Stories />
       {/* <Offers/> */}
       {/* <Portonovi /> */}
     </div>

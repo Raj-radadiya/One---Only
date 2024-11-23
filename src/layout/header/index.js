@@ -2,9 +2,8 @@ import React from 'react'
 import './header.scss'
 import call from '../../assets/icon/icons8-call-14.png';
 import mail from '../../assets/icon/icons8-mail-14.png';
-import downarrow from '../../assets/icon/icons8-down-15.png';
 import logo from '../../assets/logo/logo.webp';
-import line from '../../assets/icon/3line.jpg';
+import line from '../../assets/icon/3line.png';
 export default function MainHeader() {
   return (
     <div>
@@ -45,9 +44,6 @@ export default function MainHeader() {
           </div>
         </div>
       </div>
-
-
-
 
       <div className='navSection'>
         <div className='navLink'>

@@ -121,6 +121,7 @@
 @media (max-width:768px) {
     .hostelSpecificationMain {
         grid-template-columns: 200px 1fr;
+        margin: 0 20px !important;
 
         .specificationLeft {
             padding: 0;
@@ -176,6 +177,8 @@
     }
 
     .roomBookDetails {
+        padding: 50px 0;
+
         .roomBooking {
             padding: 0px;
 
@@ -184,10 +187,7 @@
 
                 .roomBookingImg {
                     position: relative;
-                    // left: 0;
-                    // top: 0;
-                    // min-width: 100%;
-                    // padding: 0 30px;
+                    padding: 0 20px;
                     max-width: 100%;
 
                     img {
@@ -204,7 +204,7 @@
 
                     .roomBookingText {
                         min-width: 100%;
-                        padding:30px 40px;
+                        padding: 30px 40px;
 
                         .roomBookingHead {
                             max-width: 100%;

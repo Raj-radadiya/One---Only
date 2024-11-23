@@ -5,8 +5,8 @@ import Explore from './exploreBtnPage'
 export default function Stories() {
     return (
         <div>
-            {/* <StoriesMain/> */}
-            <Explore/>
+            <StoriesMain />
+            <Explore />
         </div>
     )
 }

@@ -13,8 +13,8 @@ export default function Events() {
       <Celebrate />
       <EventLocation />
       <DiningLocation />
-      <EventMeeting/>
-      <EventForm/>
+      <EventMeeting />
+      <EventForm />
     </div>
   )
 }

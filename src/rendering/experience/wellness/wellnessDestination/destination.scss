@@ -66,6 +66,7 @@
 
 .ancientMain {
     position: relative;
+    padding: 50px 0 50px;
 
     .ancientImg {
         height: 550px;
@@ -147,6 +148,7 @@
 
     .ancientMain {
         padding: 0 60px;
+        margin: 50px 0;
 
         .ancientImg {
             width: 100%;
@@ -182,7 +184,8 @@
             .slider-container3 {
                 display: block;
             }
-            .slick-slide{
+
+            .slick-slide {
                 padding: 0 5px;
             }
 

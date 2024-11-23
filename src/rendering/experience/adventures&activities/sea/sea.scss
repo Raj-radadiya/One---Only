@@ -229,21 +229,24 @@
     }
 
     .slick-slide {
-        padding: 0;
+        // padding: 0 10px !important;
     }
 }
 
 @media (max-width:576px) {
     .seaMain {
-        max-width: 576px;
+        width: 100%;
 
         .seaCard {
             width: 100%;
 
             .seaCardMain {
+                width: 100%;
+
                 .seaLeft {
-                    max-width: 576px;
+                    width: 100%;
                     margin: 0 auto;
+                    border-bottom: none;
 
                     .seaDisc {
                         padding: 0 20px;
@@ -255,7 +258,7 @@
                 }
 
                 .seaRight {
-                    overflow: hidden;
+                    margin-left: 8%;
 
                     .slider-container {
                         display: none;
@@ -265,16 +268,8 @@
                         display: block;
                     }
 
-                    .seaSlider {
-                        width: 100%;
-
-                        .seaCardImg {
-                            width: 100%;
-
-                            img {
-                                width: 100%;
-                            }
-                        }
+                    .slick-slide {
+                        padding: 0 10px;
                     }
                 }
             }
@@ -299,8 +294,9 @@
         .adriaticImg {
             position: relative;
             left: 0;
-            min-width: 100%;
-            padding: 0 30px;
+            top: 0;
+            padding: 0 15px;
+            width: auto;
 
             img {
                 min-width: 100%;

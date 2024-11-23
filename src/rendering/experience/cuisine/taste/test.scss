@@ -200,6 +200,7 @@
 
                 .tasteCard {
                     padding: 0 5px;
+
                     .tasteImg {
                         max-height: 370px;
 
@@ -219,6 +220,7 @@
             .tasteCardMain {
                 padding: 30px 20px;
                 flex-direction: column-reverse;
+                gap: 15px;
 
                 .tasteLeft {
                     width: 100%;
@@ -250,6 +252,7 @@
             }
 
             .tasteSlider {
+                margin-left: 8%;
                 .tasteCard {
                     margin-bottom: 30px;
 

@@ -2,7 +2,6 @@ import React from 'react'
 import './travel.scss'
 import architecture from '../../../../assets/video/oldArchitecture.mp4';
 import gold from '../../../../assets/video/goldvideo.mp4';
-import play from '../../../../assets/icon/play.svg';
 import couple from '../../../../assets/video/couple.mp4';
 import bee from '../../../../assets/image/bee.webp';
 export default function GroupTravel() {

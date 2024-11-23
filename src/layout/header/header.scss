@@ -122,6 +122,7 @@
 @media (max-width:768px) {
     .headerMain {
         .headerBg {
+            border: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -161,6 +162,10 @@
             }
         }
     }
+
+    .navSection {
+        display: none;
+    }
 }
 
 @media (max-width:576px) {
@@ -170,6 +175,7 @@
             justify-content: space-between;
             padding: 10px;
             align-items: center;
+            border: none;
 
             .headerLeft {
                 display: none;
@@ -197,12 +203,8 @@
             }
 
             .headerRight {
-                text-align: end;
-
                 button {
-                    @include btn;
-                    max-width: 130px;
-                    padding: 10px 12px;
+                    display: none;
                 }
             }
         }

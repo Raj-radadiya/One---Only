@@ -9,11 +9,11 @@ export default function Experience() {
   return (
     <div>
       <Activity />
-      {/* <Cuisine/> */}
-      {/* <Villa/> */}
-      {/* <Family/> */}
-      {/* <Events /> */}
-      {/* <Wellness /> */}
+      <Cuisine />
+      <Villa/>
+      <Family />
+      <Events />
+      <Wellness />
     </div>
   )
 }

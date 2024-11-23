@@ -6,9 +6,9 @@ import Athens from './athens'
 export default function PrivateHomes() {
   return (
     <div>
-      <Maxico/>
+      <Maxico />
       <Montenegro/>
-      <Athens/>
+      <Athens />
     </div>
   )
 }

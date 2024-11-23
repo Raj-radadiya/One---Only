@@ -169,8 +169,11 @@
     }
 
     .montenegroCardMain {
+        margin: 50px 0;
+
         .montenegroCard {
             padding: 90px 0;
+
             .montenegroCardLeft {
                 max-width: 500px;
                 padding: 30px 30px 0;
@@ -230,6 +233,8 @@
     }
 
     .montenegroCardMain {
+        padding: 10px 0;
+
         .montenegroCard {
             margin: 80px 0 0;
             @include flex;
@@ -257,6 +262,7 @@
 
     .roomMain {
         flex-direction: column;
+        margin: 100px 0 70px !important;
 
         .roomCard {
             width: 100%;
