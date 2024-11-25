@@ -35,7 +35,8 @@
     .montenegroPara {
         p {
             @include p;
-            a{
+
+            a {
                 color: var(--dark-black-color);
             }
         }
@@ -140,6 +141,12 @@
 
         .montenegroBtn {
             margin-bottom: 50px;
+        }
+
+        .montenegroPara {
+            a {
+               display: none;
+            }
         }
     }
 
