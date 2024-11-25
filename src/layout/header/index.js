@@ -48,6 +48,19 @@ export default function MainHeader() {
       <div className='navSection'>
         <div className='navLink'>
           <a href='#'>resorts</a>
+          <div className='navLinkHover'>
+            <div className='navLinkHoverLeft'>
+              <div className='navLinkTitle'>
+                  
+              </div>
+              <div className='navLinks'>
+
+              </div>
+            </div>
+            <div className='navLinkHoverRight'>
+
+            </div>
+          </div>
         </div>
         <div className='navLink'>
           <li>
