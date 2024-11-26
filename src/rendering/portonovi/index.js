@@ -6,8 +6,8 @@ import FooterContact from './footerContact'
 export default function Portonovi() {
   return (
     <div>
-      {/* <PortonoviMain /> */}
-      {/* <FooterAbout />  */}
+      <PortonoviMain />
+      <FooterAbout /> 
       <FooterContact />
     </div>
   )

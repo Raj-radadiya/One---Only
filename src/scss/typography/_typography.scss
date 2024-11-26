@@ -35,9 +35,10 @@
     font-weight: 500;
 
     @media (max-width:576px) {
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 10px;
         line-height: 30px;
+        letter-spacing: 3px;
     }
 }
 
@@ -51,7 +52,7 @@
     @include font500;
 
     @media (max-width:576px) {
-        font-size: 21px;
+        font-size: 19px;
         letter-spacing: 2px;
         line-height: 28px;
         margin-bottom: 10px;
@@ -66,6 +67,10 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     @include font500;
+    @media (max-width:576px) {
+        @include font16;
+        letter-spacing: 2px;
+    }
 }
 
 @mixin p {
@@ -76,8 +81,12 @@
     line-height: 25px;
     @include arial;
 
+    @media (max-width:768px) {
+        @include font14;
+    }
     @media (max-width:576px) {
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
+        @include font13;
     }
 }
 
@@ -102,6 +111,9 @@
 @mixin font12 {
     font-size: 12px;
 }
+@mixin font13 {
+    font-size: 13px;
+}
 
 @mixin font14 {
     font-size: 14px;
@@ -109,6 +121,9 @@
 
 @mixin font15 {
     font-size: 15px;
+}
+@mixin font16 {
+    font-size: 17px;
 }
 
 @mixin font18 {

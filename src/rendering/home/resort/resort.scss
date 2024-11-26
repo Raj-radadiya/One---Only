@@ -179,6 +179,7 @@
             padding: 20px 0 0 !important;
 
             h4 {
+                @include h4;
                 color: var(--light-dark-para-color);
             }
 
