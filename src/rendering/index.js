@@ -15,8 +15,8 @@ export default function Rendering() {
       <Experience />
       <PrivateHomes />
       <Stories />
-      <Offers/>
-      <Portonovi />
+      {/* <Offers/> */}
+      {/* <Portonovi /> */}
     </div>
   )
 }

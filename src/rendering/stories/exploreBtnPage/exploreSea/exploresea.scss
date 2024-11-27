@@ -295,8 +295,8 @@
         margin: 20px 0 0;
 
         .farryLoadVideo {
-            img {
-                height: 260px;
+            video {
+                height: 360px;
             }
         }
 
@@ -314,7 +314,7 @@
     .artPosterMain {
         width: 100%;
         padding: 20px;
-        margin: 200px 0 0;
+        margin: 70px 0 0;
 
         .artPosterImg {
             height: 235px;
@@ -350,15 +350,15 @@
 
         .teamDisctuionLeft {
             .disctionImg {
-                img {
-                    height: 240px;
+                video {
+                    height: 340px;
                 }
             }
         }
 
         .teamDisctionRight {
             img {
-                height: 480px;
+                height: 400px;
                 width: 100%;
                 object-fit: cover;
             }
